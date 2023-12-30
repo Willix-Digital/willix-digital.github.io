@@ -1,0 +1,83 @@
+@media  only screen and (max-width :1024px) {
+    /**********************Header**************************/
+    #li-nav{
+        display: none;
+    }
+    .nav-bar {
+        font-size: 30px;
+        padding: 20px 20px;
+        padding-bottom: 10px;
+        
+    }
+
+    .nav-bar  a{
+        font-size: 40px;
+    }
+
+}
+
+@media  only screen and (max-width :900px) {
+    /**********************Header**************************/
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100vw;
+        max-width: 100%;
+        padding-left: 0px;
+
+    }
+    .nav-bar{
+        display: none;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        width:50%;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.603);
+        color: White;
+        gap: 5vw;
+        padding: 0 30px;
+        position: relative;
+        transition: all 0.5s ease;  
+        margin: auto;
+    }
+    .menu{
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
+        transition: all 0.6s;
+    }
+    .nav-bar ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        gap: 5vw;
+        font-size: 20px;
+        transition: all 0.6s;
+
+    }    
+    .claculateurIMC {
+        width: 320px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+    .elementform {
+        width: 80%;
+        height: auto;
+        gap: 15px;
+    }
+    .reponceimc {
+        width: 80%;
+        height: auto;
+        gap: 15px;
+    }
+    .infosimc h1{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+}
