@@ -1,0 +1,254 @@
+@media   (orientation:portrait ) {
+    #slider-wrapper {
+        height: 25vh;
+      }
+    /*!============  *FORMULAIRE*  =========*/
+       .formulaire {
+           width: 65VW;
+           height: 35vh;
+       }
+   
+       #firstnameuser {
+           width: 310px;
+           height: 40px;
+       }
+   
+       #lastnameuser {
+           width: 310px;
+           height: 40px;
+       }
+   
+       #soinsuser {
+           width: 310px;
+           height: 40px;
+       }
+       #daterdv{
+           width: 310px;
+           height: 40px;
+       }
+   
+       #timerdv{
+           width: 310px;
+           height: 40px;
+       }
+       
+       .btnreserver {
+           padding: 10px 120px;
+       }
+   }
+   @media screen and (max-width:1440px){
+   
+   }
+   @media screen and (max-width:1024px){
+   
+   }
+   
+   
+   @media (max-width: 970px) {
+   /*!============  *HEAD*  =========*/
+       .navbar :is(.hamburger-btn, .close-btn) {
+           display: block;
+       }
+   
+       .navbar {
+           padding: 15px 0;
+       }
+   
+       .navbar .logo img {
+           display: none;
+       }
+   
+       .navbar .logo h2 {
+           font-size: 1.4rem;
+       }
+   
+       .navbar .links {
+           position: fixed;
+           top: 0;
+           z-index: 99999;
+           left: -100%;
+           display: block;
+           height: 100vh;
+           width: 100%;
+           padding-top: 60px;
+           text-align: center;
+           background: #884A39;  
+           transition: 0.2s ease;
+       }
+   
+       .navbar .links.show-menu {
+           left: 0;
+       }
+   
+       .navbar .links a {
+           display: inline-flex;
+           margin: 20px 0;
+           font-size: 1.2rem;
+           color: white;
+       }
+   
+       .navbar .login-btn {
+           font-size: 0.9rem;
+           padding: 7px 10px;
+       }
+   /*!============  *FORMULAIRE*  =========*/
+   
+       #slider-wrapper {
+           height: 40vh;
+         }
+   /*!=======*A PROPOS========*/
+     .a-propos {
+       height:auto;
+       max-width: 100vw;
+       flex-wrap: wrap;
+       flex-direction: column;
+       margin: 0;
+       padding:0;
+       background-color:#FAF6F0;
+       }
+
+       .propos-msg {
+       height: auto;
+       flex-wrap: wrap;
+       gap: 20px;
+       margin: 20px 0;
+       }
+       .msg-txt {
+           width: 95%;
+           height: 30%;
+       }
+   
+       .msg-txt h1 {
+           color: #3e2a0f;
+       }
+       
+       .msg-txt p {
+           color: #3e2a0f;
+           font-weight: 300;
+       }
+       
+       .msg-txt p span {
+           color: #ddbf9c;
+       }
+       .propos-img {
+           width: 100%;
+           height: 50%;
+           padding: 0 20px;
+       }
+       
+       .propos-img img {
+           width: 100%;
+           height: 100%;
+           box-shadow: 10px 10px 5px 0px #694d45;
+           transition: all 0.6s ease-out;
+       }
+       .msg-txt .button {
+           padding: 2px 15px;
+           cursor: pointer;
+           background-color: #884A39;  
+           border: 2px solid #884A39;  
+           color: #884A39;  
+           font-size: 20px;
+           font-weight: bold;
+       }
+   
+   /*!=======* ZONE DETENTE ========*/
+       .ZoneDetente{
+          display: none;
+       
+       }
+   
+   /*!=======* SERVICE ========*/
+         .wrapper .carousel {
+           grid-auto-columns: calc((100% / 2) - 8px);
+       }
+   
+   /*!=======* FOOTER  ========*/
+        footer {
+           height: auto;
+           padding: 20px 0;
+       }
+   
+       .part1 {
+           height: 80%;
+           flex-wrap: wrap;
+       }    
+       .part2 {
+           height: 20%;
+           flex-wrap: wrap;
+       }
+       .Lehahiahangel {
+           width: 90%;
+       }
+       .Lehahiahangel button {
+           width: 40%;
+           font-size: 20px;
+       }
+       .Nospages {
+           width: 90%;
+       }
+   
+       .Nouscontacter {
+           width: 90%;
+           padding: 0;
+           margin: 0;
+       }
+   
+       .Horraires {
+           width: 90%;
+       }
+   }
+   
+   
+   
+   @media (max-width: 760px) {
+   /*!============  *FORMULAIRE*  =========*/
+       .form-popup {
+           width: 95%;
+       }
+   
+       .form-box .form-details {
+           display: none;
+       }
+   
+       .form-box .form-content {
+           padding: 30px 20px;
+       }
+       .formulaire {
+           width: 85VW;
+           height: 75vh;
+       }
+   
+       .elementform h2 {
+           font-size: 6vw;
+       }
+   
+       .elementform {
+           height: 95%;
+           width: 85%;    
+       }
+   
+       .elementform  ::placeholder {
+       font-size: 15px;  
+       }
+   
+       .btnreserver{
+           font-size: 15px;
+       }
+   /*!=======* SERVICE ========*/
+       .wrapper .carousel {
+           grid-auto-columns: calc((100% / 1) - 8px);
+       }
+   }
+   @media  (max-width:425px){
+       #logo a {
+           font-size: 1.1rem;
+       }
+   }
+   @media (max-width:375px){
+      
+   }
+   @media  (max-width:320px){
+      
+   }
+   

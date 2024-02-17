@@ -1,0 +1,100 @@
+@media (orientation: portrait) {
+    /*!
+    ==========================================================
+        *FORMULAIRE
+    ==========================================================
+    */
+    .formulaire {
+        width: 65VW;
+        height: 35vh;
+    }
+
+    #firstnameuser {
+        width: 310px;
+        height: 40px;
+    }
+
+    #lastnameuser {
+        width: 310px;
+        height: 40px;
+    }
+
+    #soinsuser {
+        width: 310px;
+        height: 40px;
+    }
+    #daterdv{
+        width: 310px;
+        height: 40px;
+    }
+
+    #timerdv{
+        width: 310px;
+        height: 40px;
+    }
+    
+    .btnreserver {
+        padding: 10px 120px;
+    }
+}
+@media screen and (max-width:1024px) {}
+
+
+@media screen and (max-width:900px) {}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /*!
+    ==================================================
+        *HEADER
+    ==================================================
+    */
+
+    #logo a {
+        font-size: 23px;
+        padding-left: 35px;
+    }
+
+    .menu-hamburger {
+        font-size: 26px;
+        padding-right: 35px;
+    }
+
+    /*!
+    ===============================================================
+        *FORMULAIRE
+    ===============================================================
+    */
+
+    .formulaire {
+        width: 85VW;
+        height: 75vh;
+    }
+
+    .elementform h2 {
+        font-size: 6vw;
+    }
+
+    .elementform {
+        height: 95%;
+        width: 85%;    
+    }
+
+    .elementform  ::placeholder {
+    font-size: 15px;  
+    }
+
+    .btnreserver{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width:614px) {}
+
+
+
+@media screen and (max-width:425px) {}

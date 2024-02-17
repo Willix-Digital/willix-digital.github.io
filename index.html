@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léhahia Angel's</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/Style.responsive.css">
+    <link rel="stylesheet" href="./css/font.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script defer src="https://kit.fontawesome.com/2b1a7acadb.js" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+
+
+<body>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <div id="logo"><a href="./index.html">Léhahiah <span>Angel's</span></a></div>        
+
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="#">Galéries</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+            <button class="login-btn">Réserver</button>
+        </nav>
+
+    <div id="slider-wrapper">
+        <div class="inner-wrapper">
+          <input checked type="radio" name="slide" class="control" id="Slide1" />
+          <label for="Slide1" id="s1"></label>
+          <input type="radio" name="slide" class="control" id="Slide2" />
+          <label for="Slide2" id="s2"></label>
+          <input type="radio" name="slide" class="control" id="Slide3" />
+          <label for="Slide3" id="s3"></label>
+          <input type="radio" name="slide" class="control" id="Slide4" />
+          <label for="Slide4" id="s4"></label>
+          <div class="overflow-wrapper">
+            <div class="slide">
+              <img src="./images/bg01.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/z1.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/yy.jpg" />
+            </div>
+            <div class="slide">
+              <img src="./images/Sauna.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <form>
+            <div class="formulaire">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <div class="elementform">
+                    <h2> Rendez-vous</h2>
+                    <input type="text" placeholder="Tapez votre nom ici" id="firstnameuser">
+                    <input type="text" placeholder="Tapez votre prénom ici" id="lastnameuser">
+                    <select name="SOIN" id="soinsuser">
+                        <option>MASSAGE</option>
+                        <option>ÉPILATION</option>
+                        <option>VISAGE</option>
+                    </select>
+                    <input type="date" placeholder="Date" id="daterdv">
+                    <input type="time" placeholder="Heure" id="timerdv">
+                    <input type="button" id="" class="btnreserver" value="RÉSERVER">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="a-propos" id="propos">
+        <div class="propos-msg">
+            <div class="msg-txt">
+                <h1>Qui sommes nous ?</h1>
+                <p><span>Léhahiah Angel's</span> est un institut de bien-être. Cet établissement se concentre sur la relaxation, la beauté, la santé et le bien-être de ses clients.</p>
+                <p>Que vous souhaitiez vous détendre après une longue journée de travail, retrouver votre éclat naturel ou prendre soin de votre santé physique et mentale, Léhahiah Angel's a tout ce qu'il vousfaut.</p>
+                <button class="button" type="button"><a href="">En savoir plus</a></button>
+            </div>
+            <div class="propos-img">
+                <img src="./images/bg01.jpg" alt="Image 1" class="responsiveImage">
+            </div>
+        </div>
+        <a href="#header" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </section>
+
+    <section class="ZoneDetente">
+        <div class="ZoneDetente-Text">
+            <h1>VOTRE ZONE DÉTENTE</h1>
+        </div>
+        <div class="ZoneDetente-Img">
+            <img src="./images/bg10.jpg" alt="Image 1" >
+            <img src="./images/z2.jpg" alt="Image 2" class="responsiveImage">
+            <img src="./images/g70.jpg" alt="Image 3" class="responsiveImage">
+        </div>
+    </section>
+
+    
+    <section class="services" id="services">
+        <div class="service-txt">
+            <h1>Nos services</h1>
+        </div>
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-caret-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="./images/petiteimg_massage.jpg" alt="massage" draggable="false" ></div>
+                    <h2>Massages</h2>
+                    <input type="button" id="" class="btnvr" value="TOUS LES MASSAGES">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./images/petiteimgepilation.jpg" alt="Épilations" draggable="false">
+                    </div>
+                    <h2>Épilations</h2>
+                    <input type="button" id="" class="btnvr" value="TOUTES LES ÉPILATIONS">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./images/bg10.jpg" alt="Hamam" draggable="false"></div>
+                    <h2>Hamam</h2>
+                    <input type="button" id="" class="btnvr" value="TOUS LES HAMAM"  href="./tarifs.html">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./images/yy.jpg" alt="Gommages" draggable="false"></div>
+                    <h2>Gommages</h2>
+                    <input type="button" id="" class="btnvr" value="TOUS LES GOMMAGES">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./images/soinsvisage.jpg" alt="Soins visage" draggable="false"></div>
+                    <h2>Soins visage</h2>
+                    <input type="button" id="" class="btnvr" value="TOUS LES SOINS VISAGES">
+                </li>
+                <li class="card">
+                    <div class="img"><img src="./images/Sauna.jpg" alt="Sauna" draggable="false">
+                        <a href="./tarifs.html"></a>
+                    </div>
+                    <h2>Sauna</h2>
+                    <input type="button" id="" class="btnvr" value="TOUS LES SAUNA">
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-caret-right"><a href="#nav"></a></i>
+            </i>
+        </div>
+        <div id="la">
+            <a href="./tarifs.html">
+                <input type="button" class="btnv" value="Nos tarifs">
+
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="part1">
+            <div class="Lehahiahangel">
+                <h1>Léhahiah Angel's</h1>
+                <p>
+                    Une équipe de professionnels assure des prestations
+                    spécialisées & propose des soins adaptés à votre cas
+                    dans un institut toujours à la pointe des nouveautés !
+                </p>
+                <button class="button" type="button"><a href="./contact.html">Contact</a></button>
+            </div>
+
+            <div class="Nospages">
+                <h1>NOS PAGES</h1>
+                <a href="#propos">À propos</a>
+                <a href="#Nos services">Nos Services</a>
+                <a href="#galérie">Galérie</a>
+                <a href="#Promotions">Promotions</a>
+                <a href="#nosclient">Nos clients</a>
+            </div>
+
+            <div class="Nouscontacter">
+                <h1><a href="./contact.html">NOUS CONTACTER</a></h1>
+                <div><a href=""><i class="fa-solid fa-location-dot"></i></a>Charbonnages Gabon</div>
+                <div><a href=""><i class="fa-solid fa-phone"></i></a>Phone: +241 066 68 58 85</div>
+                <div><a href=""><i class=" fac fa-brands fa-whatsapp"></i></a>Whatsapp : +241 066 68 58 85</div>
+            </div>
+
+            <div class="Horraires">
+                <h1>NOS HORAIRES</h1>
+                <p>LUNDI au SAMEDI <span>8h00  - 18h30</span></p>
+                <p>DIMANCHE        <span>13h30 - 18h30</span></p>
+                <P>FERMER LE MERCREDI</P>
+
+                <h1>NOUS SUIVRE</h1>
+                <div class="social">
+                    <a href="https://www.instagram.com/leha.hiah/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/lehahiah.lehahiah.7/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Lehahiahangels"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@lehahiahangels?lang=fr"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="part2">
+            <p>© 2024 Léhahiah Angel s, Tous droits réservés Développer par  <span>@willix digital</span></p>
+        </div>
+    </footer>
+    <script src="./js/Index.js"> </script>
+</body>
