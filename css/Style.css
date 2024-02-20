@@ -49,6 +49,7 @@ body {
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand';
 }
 
 
@@ -65,7 +66,6 @@ body {
     width:2000px ;
     max-width: 100%;
     justify-content: space-around;
-    background-color: #FAF6F0;
     margin: auto;
 }
 
@@ -296,46 +296,47 @@ body {
 header {
     width: 100vw;
     max-width: 100%;
-    height: 60vh;
+    height: 800px;
     max-width: 100%;
     position: relative;
-    margin-bottom: 0px;
     background: #bb8c6c;     
     overflow: hidden;
     background: url(../images/z2.jpg);
     background-position: 15% 75%;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-items: flex-end;
+    justify-content: flex-end;
   }
 
   .header-txt{
-    position: relative;
     width: 1600px;
     max-width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-items: flex-end;
-
+    bottom: 40px;
+    position: absolute;
+    gap: 10px;
+    color: #000;
     }
 
   header h1 {
-    background-color: #bb8c6c;
-    position: relative;
     font-size: 50px;
     color: white;
-    padding: 10px;
+    padding: 0px 20px;
+    width: 100%;
   }
 
   
   header h2 {
-    background-color: #bb8c6c;
-    position: relative;
     bottom: 0px;
     left: 30px;
     font-size: 30px;
     color: white;
-    padding: 10px;
+    padding:2px 20px;
+    width: auto;
 
   }
 
@@ -347,7 +348,7 @@ header {
 .a-propos {
     width: 1600px;
     max-width: 100%;
-    height:285px;
+    max-height:275px;
     background: #bb8c6c;     
     margin: auto;    
     margin-top: 40px;
@@ -366,22 +367,21 @@ header {
 }
 
 .msg-txt {
-    width: 40%;
+    width: 60%;
     margin: auto;
 }
 
 .msg-txt h1 {
-    color: #3d220f ;
+    color: white ;
     font-family: "Quicksand";
     padding-bottom: 10px;
+    font-size: 40px;
 }
 
 .msg-txt p {
     font-size: 15px;
     color: white;
-    font-family: "Roboto", sans-serif;
     font-family: "Quicksand";
-
     font-weight: bold;
     padding-bottom: 1.5rem;
 
@@ -401,16 +401,16 @@ header {
     padding: 2px 25px;
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #6C3428 ;
-    color: #6C3428 ;
+    border: 1px solid white ;
+    color: white ;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
     transition: all 0.4s ease-out;
     font-family: "Quicksand";
 }
 
 .msg-txt .button a {
-    color: #6C3428 ;
+    color: white ;
     margin: auto;
 }
 
@@ -420,8 +420,8 @@ header {
 }
 
 .propos-img {
-    width: 40%;
-    height: 50%;
+    width: 30%;
+    height: 100%;
     padding: 0 20px;
     display: flex;
     align-items: center;
@@ -430,7 +430,7 @@ header {
 
 .propos-img img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     object-position: center;
     box-shadow: 10px 10px 5px 0px rgba(241, 222, 201, 0.75);
@@ -449,7 +449,6 @@ a.to-top {
     right: 15px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     cursor: pointer;
     font-size: 32px;
     text-decoration: none;
@@ -487,7 +486,7 @@ a.to-top {
 =================================================================================================================================
 */
 .ZoneDetente{
-    height:550px;
+    height:450px;
     max-width: 1600px;
     display: flex;
     flex-wrap: wrap;
@@ -531,8 +530,8 @@ a.to-top {
 }
 
 .ZoneDetente-Img img:nth-child(2){
-    height:450px ;
-    width: 300px;
+    max-height:450px ;
+    max-width: 300px;
 }
 
 
@@ -562,11 +561,13 @@ a.to-top {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .service-txt h1 {
     font-size: 50px;
     color: #884A39;  
+    font-family: 'Quicksand';
 }
 
 .wrapper {
@@ -596,6 +597,7 @@ a.to-top {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
+    margin: auto;
 }
 
 .wrapper i:active {
@@ -617,12 +619,14 @@ a.to-top {
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 10px);
+    grid-auto-columns: calc((100% / 4) - 10px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 10px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    justify-content: center;
+    justify-items: center;
 }
 
 .carousel::-webkit-scrollbar {
@@ -651,8 +655,8 @@ a.to-top {
 
 .carousel .card {
     scroll-snap-align: start;
-    height:100%;
-    width: 100%;
+    max-height:320px;
+    width: 95%;
     list-style: none;
     background: #bb8c6c;     
     flex-direction: column;
@@ -668,18 +672,17 @@ a.to-top {
 .carousel .card .img {
     height:100%;
     width: 100%;
-    clip-path: circle(50% at 50% 50%);    
     overflow: hidden;
     padding-top: 30px;
     object-fit: cover;
 }
 
 .card .img img {
-    width: 250px;
-    height:250px;
-    clip-path: circle(50% at 50% 50%);    
+    width: 90%;
+    height:180px;
     object-fit: cover;
     transition: transform .4s;
+    margin-top: 10px;
 }
 
  .card .img img:hover {
@@ -702,7 +705,7 @@ a.to-top {
     color:white;
     background: transparent;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 12px;
     transition: all 0.2s ease-in-out;
     border: 1px solid white;
