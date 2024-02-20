@@ -46,10 +46,11 @@ a {
 }
 
 body {
-    background-color: #FAF6F0;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
+
 
 /*!
 =================================================================================================================================
@@ -61,10 +62,11 @@ body {
     display: flex;
     padding: 15px 0;
     align-items: center;
-    width:100vw ;
+    width:2000px ;
     max-width: 100%;
     justify-content: space-around;
     background-color: #FAF6F0;
+    margin: auto;
 }
 
 .navbar .hamburger-btn {
@@ -300,18 +302,26 @@ header {
     margin-bottom: 0px;
     background: #bb8c6c;     
     overflow: hidden;
-    background: url(../images/bg01.jpg);
-    background-position: center;
+    background: url(../images/z2.jpg);
+    background-position: 15% 75%;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
   }
+
+  .header-txt{
+    position: relative;
+    width: 1600px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-end;
+
+    }
 
   header h1 {
     background-color: #bb8c6c;
-    position: absolute;
-    bottom: 70px;
-    left: 30px;
+    position: relative;
     font-size: 50px;
     color: white;
     padding: 10px;
@@ -320,8 +330,8 @@ header {
   
   header h2 {
     background-color: #bb8c6c;
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 0px;
     left: 30px;
     font-size: 30px;
     color: white;
@@ -361,7 +371,7 @@ header {
 }
 
 .msg-txt h1 {
-    color: #6C3428 ;
+    color: #3d220f ;
     font-family: "Quicksand";
     padding-bottom: 10px;
 }

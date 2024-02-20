@@ -91,6 +91,16 @@
            font-size: 0.9rem;
            padding: 7px 10px;
        }
+        header h1 {
+            bottom: 50px;
+            font-size: 5vw;
+            width: auto;
+            left: 10px;
+        }        
+        header h2 {
+            font-size: 3vw;
+            left: 10px;
+        }
    /*!============  *FORMULAIRE*  =========*/
    
        #slider-wrapper {
