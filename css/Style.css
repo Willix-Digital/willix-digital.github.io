@@ -298,8 +298,7 @@ body {
 header {
     width: 100vw;
     max-width: 100%;
-    min-height: 55vh;
-    max-height: 60vh;
+    height: 60vh;
     position: relative;
     background: #bb8c6c;     
     overflow: hidden;
