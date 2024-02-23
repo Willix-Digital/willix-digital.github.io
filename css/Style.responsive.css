@@ -257,7 +257,7 @@
     /*!============  *HEADER*  =========*/
    
     header {
-        height: 20vh;
+        height: 40vh;
         background: url(../images/bg01.jpg);
         background-position: center;
 
@@ -299,8 +299,14 @@
    /*!=======* SERVICE ========*/
    .services {
     margin-top: 0px;
-}
-
+    }
+    .a-propos {
+        height: auto;
+    }
+    .msg-txt {
+    height: auto;
+    }
+    
        .wrapper .carousel {
            grid-auto-columns: calc((90% / 1) - 8px);
        }
@@ -315,10 +321,43 @@
      .prestations{
         max-height: auto;
         min-height: auto;
-        grid-template-columns: repeat(1, 320px);
-        gap: 30px;
+        grid-template-columns: repeat(4, 100px);
+        gap: 5px;
+        height: 140px;
     }
- 
+    .presta{
+        height:90px;
+        width: 100px;
+        margin: auto;
+        text-align: center;
+        margin: auto;
+        gap: 0;
+        padding:5px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+    }
+    .presta h1{
+        font-size: 15px;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .presta h3{
+        display: none;
+    }
+    
+    .presta p{
+        display: none;
+    }
+    .presta img{
+        height: 50px;
+        width: 50px;
+    }
+
+
    }
 
    .to-top {
