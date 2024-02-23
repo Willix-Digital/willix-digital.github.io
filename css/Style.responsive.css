@@ -111,10 +111,10 @@
             font-size: 3vw;
             left: 10px;
         }
-   /*!============  *FORMULAIRE*  =========*/
+   /*!============  *HEADER*  =========*/
    
-       #slider-wrapper {
-           height: 40vh;
+       header {
+           height: 30vh;
          }
    /*!=======*A PROPOS========*/
      .a-propos {
@@ -138,21 +138,14 @@
        }
 
        .msg-txt {
-           max-width: 95%;
-           height: auto;
-           position: relative;
-           background-color: white;
-           left: 0;
-           padding: 0;
+           max-width: 100%;
        }
    
        .msg-txt h1 {
-           color: #6C3428 ;
            font-size: 30px;
        }
        
        .msg-txt p {
-           color: #6C3428 ;
        }
        
        .msg-txt p span {
@@ -170,24 +163,7 @@
            transition: all 0.6s ease-out;
            margin: 20px;
        }
-       .msg-txt .button {
-        display: flex;
-        justify-content: center;
-        padding: 2px 25px;
-        cursor: pointer;
-        background-color: transparent;
-        border: 1px solid #6C3428 ;
-        color: #6C3428 ;
-        font-size: 20px;
-        font-weight: lighter;
-        transition: all 0.4s ease-out;
-        font-family: "Quicksand";
-    }
-   
-    .msg-txt .button a {
-        color: #6C3428 ;
-        margin: auto;
-    }
+  
    /*!=======* ZONE DETENTE ========*/
        .ZoneDetente{
           display: none;
@@ -201,8 +177,22 @@
     }
     .wrapper .carousel {
            grid-auto-columns: calc((100% / 3) - 8px);
+
     }
-   
+
+    .carousel .card {
+        scroll-snap-align: start;
+        max-height:320px;
+        width: 88%;
+    }
+   /*!=======* PRESTATIONS  ========*/
+    .prestations{
+        max-height: auto;
+        min-height: auto;
+        height: auto;
+        grid-template-columns: repeat(auto-fill, 220px);
+        padding: 30px 0;
+    }
    /*!=======* FOOTER  ========*/
         footer {
            height: auto;
@@ -242,6 +232,15 @@
    
    
    @media (max-width: 760px) {
+
+    /*!============  *HEADER*  =========*/
+   
+    header {
+        height: 20vh;
+        max-height: 100ù;
+      }
+
+
    /*!============  *FORMULAIRE*  =========*/
        .form-popup {
            width: 95%;
@@ -290,7 +289,13 @@
      .wrapper i:last-child {
          display: none;
      }
-  /*!=======* SERVICE ========*/
+
+     .prestations{
+        max-height: auto;
+        min-height: auto;
+        grid-template-columns: repeat(1, 220px);
+        gap: 30px;
+    }
  
    }
    @media  (max-width:425px){

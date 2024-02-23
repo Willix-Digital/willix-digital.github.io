@@ -65,9 +65,9 @@ body {
     align-items: center;
     width:2000px ;
     max-width: 100%;
+    height: 60px;
     justify-content: space-around;
     margin: auto;
-    height: 100px;
 }
 
 .navbar .hamburger-btn {
@@ -298,21 +298,33 @@ body {
 header {
     width: 100vw;
     max-width: 100%;
-    height: 40vh;
-    max-width: 100%;
+    min-height: 55vh;
+    max-height: 60vh;
     position: relative;
     background: #bb8c6c;     
     overflow: hidden;
-    background: url(../images/bg01.jpg);
-    background-position: 15% 55%;
+    background-position: 15% 75%;
     background-size: cover;
     background-repeat: no-repeat;
+    background: url(../images/jpg1.jpg);
     display: flex;
     justify-items: flex-end;
     justify-content: flex-end;
     margin: auto;
+
   }
 
+  header::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 20%;
+
+  }
   .header-txt{
     width: 1600px;
     max-width: 100%;
@@ -323,6 +335,7 @@ header {
     position: absolute;
     gap: 10px;
     color: #000;
+    z-index: 1;
     }
 
   header h1 {
@@ -342,6 +355,48 @@ header {
     width: auto;
 
   }
+/*!
+=================================================================================================================================
+      *PRESTATIONS
+=================================================================================================================================
+*/
+.prestations{
+    height: 270px;
+    width: 100vw;
+    max-width: 100%;
+    display: grid;   
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.presta{
+    height: 200px;
+    width: 220px;
+    margin: auto;
+    text-align: center;
+    margin: auto;
+    gap: 20px;
+}
+.presta h1{
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.presta h3{
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.presta p{
+    font-size: 12px;
+}
+.presta img{
+    height: 100px;
+    width: 100px;
+}
 
 /*!
 =================================================================================================================================
@@ -351,34 +406,32 @@ header {
 .a-propos {
     width: 1600px;
     max-width: 100%;
-    height:800px;
+    height:400px;
     display: flex;
-    justify-content: center;
+    justify-content:left;
     align-items: center;
     flex-wrap: nowrap;
     margin: auto; 
-    background-attachment: scroll;    
-    background: url(../images/bg10.jpg);
-    background-repeat: no-repeat;
+    background-color: #ce8f2d;
+    background: url(../images/bg04.jpg);
+    background-position: 50% 50%;    
     background-size: cover;
-    background: ;
+    background-repeat: no-repeat;
 }
 
 .propos-msg {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
     position: relative;
 }
 
 .msg-txt {
-    max-width: 80%;
-    height: 600px;
-    margin: auto;
-    backdrop-filter: blur(50px) ;    
-    padding: 40px;
-    left: 20px;
+    max-width: 50%;
+    height: 350px;
+    padding: 10px;
+    backdrop-filter: blur(17px);
 }
 
 .msg-txt h1 {
@@ -429,23 +482,7 @@ header {
     box-shadow: 0 0 10px 5px white;
 }
 
-.propos-img {
-    width: 45%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    margin: auto;
-    margin-right: 40px;
-}
 
-.propos-img img {
-    width: 100%;
-    height: 150%;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 10px 10px 5px 5px rgba(241, 222, 201, 0.75);
-    transition: all 0.6s ease-out;
-}
 
 
 
@@ -612,6 +649,7 @@ a.to-top {
 
 .wrapper i:active {
     transform: translateY(-50%) scale(0.85);
+    display: none;
 }
 
 .wrapper i:first-child {
@@ -765,7 +803,7 @@ a.to-top {
 =================================================================================================================================
 */
 #galérie {
-    width: 1600px;
+    width: 100vw;
     height: auto;
     max-width: 100%;
     display: flex;
@@ -787,9 +825,8 @@ a.to-top {
 }
 
 .gal-txt h1 {
-    font-size: 3rem;
-    color: #884A39; 
-    font-family: 'Quicksand'; 
+    font-size: 50px;
+    color: #f1dec9;
 }
 
 .ma-galerie {
@@ -805,8 +842,6 @@ a.to-top {
 .ma-galerie img{
  object-fit: cover;
  object-position: center;
- height: 300px;
- width: 300px;
 }
 .gal1{
     display: flex;
@@ -823,10 +858,6 @@ a.to-top {
     width: 50%;
     height: 100%;
 }
-.box1 img{
-    height: 600px;
-}
-
 .gal1-part2{
     display: flex;
     flex-wrap: wrap;
@@ -877,9 +908,6 @@ a.to-top {
 .box6{
     width: 50%;
     height: 100%;
-}
-.box6 img{
-    height: 600px;
 }
 /*!
 =================================================================================================================================
