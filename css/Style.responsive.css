@@ -204,50 +204,61 @@
         gap: 20px;
     }
    /*!=======* FOOTER  ========*/
-        footer {
-           height: auto;
-           padding: 20px 0;
-       }
+    footer {
+        height: auto;
+        padding: 20px 0;
+    }
    
-       .Lehahiahangel p{
+    .Lehahiahangel p{
         font-size: 20px;
     }
-        .Nospages p{
-            font-size: 20px;
-        }
 
-        .Nouscontacter p a{
-            font-size: 20px;
-        }
+    .Nospages a{
+        font-size: 20px;
+    }
 
-       .part1 {
-           height: 80%;
-           flex-wrap: wrap;
-       }    
-       .part2 {
-           height: 20%;
-           flex-wrap: wrap;
-       }
-       .Lehahiahangel {
-           width: 90%;
-       }
-       .Lehahiahangel button {
-           width: 40%;
-           font-size: 20px;
-       }
-       .Nospages {
-           width: 90%;
-       }
+    .Nouscontacter a{
+        font-size: 20px;
+    }
+
+    .part1 {
+        height: 80%;
+        flex-wrap: wrap;
+    }  
+
+    .part2 {
+        height: 20%;
+        flex-wrap: wrap;
+    }
+
+    .Lehahiahangel {
+        width: 90%;
+    }
+    .Lehahiahangel button {
+        width: 40%;
+        font-size: 20px;
+    }
+
+    .Nospages {
+        width: 90%;
+    }
    
-       .Nouscontacter {
-           width: 90%;
-           padding: 0;
-           margin: 0;
-       }
+    .Nouscontacter {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
    
-       .Horraires {
-           width: 90%;
-       }
+    .Horraires {
+        width: 90%;
+    }
+
+    .Horraires p {
+        font-size: 20px;
+        font-family: 'Quicksand';
+        font-weight: 400;
+    
+    }
    }
    
    

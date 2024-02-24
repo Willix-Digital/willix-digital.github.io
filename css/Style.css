@@ -46,7 +46,6 @@ a {
 }
 
 body {
-    background-color: white;
     margin: 0;
     padding: 0;
     font-family: 'Quicksand';
@@ -89,7 +88,7 @@ body {
 
 #logo span {
     font-family: "Catalish Huntera";
-    color: #BA704F;
+    color: #ce8f2d;
 }
 
 .navbar .links {
@@ -111,7 +110,7 @@ body {
 .navbar .links a {
     color: #884A39;  
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     transition: 0.1s ease;
 }
@@ -324,16 +323,17 @@ header {
 
   }
   .header-txt{
-    width: 1600px;
+    width: 1400px;
     max-width: 100%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    bottom: 40px;
-    position: absolute;
+    justify-content: flex-end;
+    align-items: end;
+    position: relative;
     gap: 10px;
     color: #000;
     z-index: 1;
+    margin: auto;
     }
 
   header h1 {
@@ -350,7 +350,7 @@ header {
     font-size: 30px;
     color: white;
     padding:2px 20px;
-    width: auto;
+    width: 100%;
 
   }
 /*!
@@ -359,25 +359,25 @@ header {
 =================================================================================================================================
 */
 .prestations{
-    height: 270px;
-    width: 100vw;
+    height: 28vh;
+    width: 1400px;
     max-width: 100%;
     display: grid;   
     grid-template-columns: repeat(4, 220px);
     justify-content: center;
-    align-items: center;
+    align-items:flex-end;
     grid-gap: 50px;
     padding: 10px;
+    margin: 10px auto;
 }
 
 .presta{
-    height: 250px;
+    height: 90%;
     width: 220px;
-    margin: auto;
     text-align: center;
-    margin: auto;
     gap: 20px;
-    padding: 15px 0;
+    padding: 0px 0;
+    margin: auto 0;
 }
 .presta h1{
     font-size: 22px;
@@ -432,14 +432,14 @@ header {
     max-width: 50%;
     height: 300px;
     padding: 5px 40px;
-    background-color: #ce902dda;
+    background-color: rgba(255, 255, 255, 0.966);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 
 }
 
 .msg-txt h1 {
-    color: white ;
+    color: #ce8f2d ;
     font-family: "Quicksand";
     padding-bottom: 5px;
     font-size: 2rem;
@@ -447,14 +447,14 @@ header {
 
 .msg-txt p {
     font-size: 1rem;
-    color: white;
+    color: #ce8f2d;
     font-family: "Quicksand";
     font-weight: bold;
     padding-bottom: 1.3rem;
 
 }
 
-.msg-txt p span {
+.msg-txt p span a {
     color:#6C3428 ;
     font-weight: bold;
     padding-right: 5px;
@@ -465,25 +465,27 @@ header {
 .msg-txt .button {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 2px 25px;
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid white ;
-    color: white ;
+    border: 1px solid #884A39;  
+    color: #884A39;  
     font-size: 20px;
-    font-weight: lighter;
-    transition: all 0.4s ease-out;
-    font-family: "Quicksand";
+    transition: all 0.2s ease-out;
+    font-family: 'Quicksand';
+    font-weight: bold;
 }
 
 .msg-txt .button a {
-    color: white ;
+    color: #6C3428 ;
     margin: auto;
 }
 
 .msg-txt .button:hover {
-    color: #f1dec9;
-    box-shadow: 0 0 10px 5px white;
+    color: #C38154; 
+    box-shadow: 0 0 10px 5px #C38154; 
+    border: 1px solid transparent;
 }
 
 
@@ -493,7 +495,7 @@ header {
 /* TO TOP */
 
 a.to-top {
-    background-color: #ddbf9c;
+    background-color: #c28743;   
     border: 2px solid white;
     position: fixed;
     bottom: 16px;
@@ -547,7 +549,6 @@ a.to-top {
     margin: auto;
     margin-bottom: 156PX;
     margin-top: 50PX;
-
 }
 .ZoneDetente-Text{
     height: auto;
@@ -805,21 +806,15 @@ a.to-top {
 =================================================================================================================================
 */
 #galérie {
-    width: 100vw;
+    max-width: 1700px;
+    width: 80%;
     height: auto;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
-    font-family: 'Quicksand';
-    display: none;
+    margin: auto;
 }
 
 .gal-txt {
     height: 10%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -828,88 +823,26 @@ a.to-top {
 
 .gal-txt h1 {
     font-size: 50px;
-    color: #f1dec9;
+    color: #884A39;  
+    font-family: 'Quicksand';
 }
 
 .ma-galerie {
-    max-width: 1700px;
+    max-width: 1500px;
     width: 80%;
     height: auto;
     margin: 30px auto;
-    display: flex;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
     grid-gap: 10px;
 }
 
 .ma-galerie img{
- object-fit: cover;
- object-position: center;
-}
-.gal1{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 600px;
-    width: 600px;
-    gap: 10px;
-    overflow: hidden;
- }
- .box1{
-    width: 50%;
-    height: 100%;
-}
-.gal1-part2{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 50%;
-    gap: 10px;
-}
-.box2{
-    width: 100%;
-    height: 49%;
-}
-.box3{
-    width: 100%;
-    height: 49%;
-}
-
-
-.gal2{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    height: 600px;
-    width: 600px;
-    gap: 10px;
- }
-
-
-.gal1-part2{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 50%;
-    gap: 10px;
-}
-.box4{
-    width: 100%;
-    height: 49%;
-    overflow: hidden;
-}
-.box5{
-    width: 100%;
-    height: 49%;
-    overflow: hidden;
-}
-.box6{
-    width: 50%;
-    height: 100%;
+    width: 350px;
+    height: 250px;
+    background: #333;
 }
 /*!
 =================================================================================================================================
@@ -921,7 +854,7 @@ footer {
     height: auto;
     width: 100vw;
     max-width: 100%;
-    background: #885938;    
+    background: #996b36;    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -977,6 +910,7 @@ footer {
 
 .Lehahiahangel p {
     font-size: 15px;
+    font-family: 'Quicksand';
 }
 
 .Lehahiahangel button {
@@ -1015,6 +949,7 @@ footer {
 .Nospages h1 {
     font-size:20px;
     color: white;
+    font-family: 'Quicksand';
 }
 
 .Nospages a {
@@ -1023,6 +958,7 @@ footer {
     cursor: pointer;
     transition: 0.2s;
     transition: all 0.2s ease-in-out;
+    font-family: 'Quicksand';
 }
 
 .Nospages a:hover {
@@ -1049,6 +985,7 @@ hr {
 .Nouscontacter h1 a{
     font-size: 20px;
     color: white;
+    font-family: 'Quicksand';
 }
 
 .Nouscontacter div {
@@ -1062,12 +999,19 @@ hr {
     cursor: pointer;
     transition: all 0.1s ease-in-out;
     font-weight: lighter;
+    font-family: 'Quicksand';
+    color: #F1DEC9;
+}
+
+.Nouscontacter a{
+    color: #F1DEC9;
 }
 
 .Nouscontacter i{
     font-size: 25px;
     color: #F1DEC9;
     transition: all 0.1s ease-in-out;
+    padding:0 10px;
 }
 
 .Nouscontacter i:hover{
@@ -1088,7 +1032,7 @@ hr {
     flex-direction: column;
     width: 250px;
     gap: 10px;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 .Horraires h1 {
@@ -1100,7 +1044,6 @@ hr {
     font-size: 15px;
     font-family: 'Quicksand';
     font-weight: 400;
-
 }
 
 .Horraires span {
@@ -1113,12 +1056,15 @@ hr {
     width: 70%;
     text-align: center;
     margin-top: 20px;
+    font-family: 'Quicksand';
+    font-size: 15px;
 }
 
 .social{
     width: 100%;
     gap: 20px;
     color: #F1DEC9;
+    padding: 20px 10px;
 }
 
 
