@@ -43,14 +43,15 @@ body{
 */
 
 .navbar {
+    position: fixed;
+    z-index: 1;
+    margin: auto;
     display: flex;
     padding: 15px 0;
     align-items: center;
     max-width: 1700px;
     height: 35px;
     justify-content: space-around;
-    z-index: 9;
-    margin: auto;
 }
 
 .navbar .hamburger-btn {
@@ -67,7 +68,7 @@ body{
 #logo a {
     font-size: 1.3rem;
     font-family: "Catalish Huntera";
-    color: #6C3428 
+    color: white;
 }
 
 #logo span {
@@ -92,7 +93,7 @@ body{
 }
 
 .navbar .links a {
-    color: #884A39;  
+    color: white;  
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -104,13 +105,14 @@ body{
 }
 
 .navbar .login-btn {
-    color:#884A39; 
+    color:white;
     background: transparent;
     font-weight: bold;
     padding: 2px 20px;
     font-size: 1.3rem;
     transition: all 0.2s ease-in-out;
-    border: 2px solid #884A39; 
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .navbar .login-btn:hover {
@@ -121,11 +123,11 @@ body{
 
 header {
     background-color:aliceblue;
-    height: 60vh;
+    height: 55vh;
     width: 100vw;
     max-width: 100%;
     max-height: 100%;
-    background-image: url(../images/2.jpg);
+    background-image: url(../images/bg011.jpg);
     background-size: cover;
     background-position:center ;
     position: relative;
@@ -140,6 +142,7 @@ header::before {
     right: 0;
     left: 0;
     opacity: 50%;
+    z-index: 1;
 }
 
 .header-txt {
@@ -147,6 +150,7 @@ header::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 .title {
@@ -168,12 +172,13 @@ header::before {
     margin: auto;
     cursor: pointer;
     text-align: center;
-    color:#ddbf9c;
+    color:white;
     background: transparent;
-    padding: 10px 80px;
+    padding: 8px 40px;
     transition: all 0.3s ease-in-out;
-    border: 2px solid #ddbf9c;
+    border: 2px solid white;
     font-size: 17px;
+    border-radius: 15px;
 }
 
 .header-txt .button:hover {
@@ -196,27 +201,28 @@ header::before {
 */
 
 .Promote {
-    height: 16vh;
-    max-width: 1700px;
+    height: 300px;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
+    display: none;
 }
 .promote-box{
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+    grid-gap: 40px;
+    padding: 40px auto;
+
 }
 
 .box{
-    height:100px ;
-    width:100px ;
+    width: 200px;
+    height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -238,7 +244,7 @@ header::before {
     display: flex;
     font-size: 15px;
     text-align: center;
-    color:#F1DEC9;
+    color:#694d45;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -251,19 +257,19 @@ header::before {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1700px;
-    max-height: 100%;
-    height: 500px;
+    justify-content: flex-start;
+    width: 100vw;
+    max-width: 100%;
+    height: 420px;
     background-color: #F1DEC9;
     flex-wrap: wrap;
     font-family: 'Quicksand';
     padding: 10px 0;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .promotions-txt {
-    height: 6%;
+    height: 50px;
     width: 100%;
     max-width: 100%;
     max-height: 100%;
@@ -273,14 +279,13 @@ header::before {
 }
 
 .promotions-txt h1 {
-    padding-top: 01px;
     font-size: 40px;
-    color: #694d45;
+    color: #c28743;    
 }
 
 .wrapper {
-    width:80vw ;
-    height: 85vh;
+    max-width: 1700px;
+    height: 180px;
     max-width: 100%;
     max-height: 100%;
     position: relative;
@@ -313,6 +318,7 @@ header::before {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 
 .wrapper i:first-child {
@@ -320,6 +326,7 @@ header::before {
     z-index: 1;
     color: white;
     margin: auto;
+    border-radius: 50%;
 }
 
 .wrapper i:last-child {
@@ -327,18 +334,20 @@ header::before {
     z-index: 1;
     color: white;
     margin: auto;
+    border-radius: 50%;
 }
 
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 5) - 10px);
+    grid-auto-columns: calc((100% / 6) - 10px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 10px;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    margin: auto;
+    justify-content: center;
+    justify-items: center;
 }
 
 .carousel::-webkit-scrollbar {
@@ -366,27 +375,32 @@ header::before {
 }
 .carousel .card {
     scroll-snap-align: start;
-    height:80%;
+    max-height:320px;
     width: 100%;
+    border-radius: 20px;
     list-style: none;
     background: #c28743;     
-    cursor: pointer;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     overflow: hidden;
-    color: white;
+}
+
+.carousel .card .img {
+    height:100%;
+    width: 95%;
+    overflow: hidden;
+    padding-top: 30px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .card img {
-    height:250px;
     width: 90%;
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+    height:180px;
     object-fit: cover;
-    border-radius: 15px;
+    transition: transform .4s;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #F1DEC9;
 }
 
 .card  img ::before{
@@ -396,20 +410,12 @@ header::before {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #000000ae;
+    background-color: #000000ef;
 }
-.carousel .card:hover {
-    box-shadow: 5px 5px 5px 0px rgba(252,245,245,0.75);
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(252,245,245,0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(252,245,245,0.75);}
-
-
-
 
  .card .img img:hover {
     transform: scale(1.1);
-    width: 400px;
-    height:400px;}
+}
 
 .carousel .card h2 {
     font-weight: 100;
@@ -418,13 +424,13 @@ header::before {
 }
 
 
-.carousel .card h3 {
+.carousel .card h6 {
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
     margin: 5px 0;
     text-align: center;
     top: 10px;
-    color: white;
+    color:#F1DEC9;;
     z-index: 1;
     font-weight: bold;
 }
@@ -438,21 +444,22 @@ header::before {
     margin: auto;
     display: flex;
     justify-content: center;
-    padding: 2px 25px;
+    padding: 2px 20px;
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    font-size: 20px;
+    border: 2px solid #F1DEC9;
+    color: #F1DEC9;
+    font-size: 15px;
     transition: all 0.2s ease-out;
     font-family: 'Quicksand';
     font-weight: bold;
+    border-radius: 15px;
     margin: 10px 0;
 
 }
 
 .btnvr:hover {
-    box-shadow: 0 0 10px 5px white;
+    box-shadow: 0 0 10px 5px #F1DEC9;
     border: 2px solid transparent;
 }
 
@@ -475,6 +482,7 @@ header::before {
     flex-wrap: nowrap;
     align-content: center;
     margin: auto;
+    display: none;
 }
 
 .menu{

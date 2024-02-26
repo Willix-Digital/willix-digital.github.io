@@ -8,6 +8,10 @@
         width: 65VW;
         height: 35vh;
     }
+    .CSSgal {
+        height: 35vh;
+        max-height: 35vh;
+    }
     #firstnameuser {
          width: 310px;
         height: 40px;
@@ -39,7 +43,13 @@
 
 
 
-
+@media only screen and (max-width: 1440px) {
+    .CSSgal {
+        height: 60vh;
+        max-height: 60vh;
+    }
+    
+}
 
 
 @media only screen and (min-width: 1440px) {
@@ -54,7 +64,21 @@
         justify-content: center;
         grid-gap: 10px;
     }
-    
+     /*!============  *SLIDER*  =========*/
+     .CSSgal {
+        height: 100vh;
+        max-height: 100vh;
+    }
+    .slider-txt{
+        margin-top: 30vh;
+    }
+    #slidtitle {
+        font-size: 80px;
+    }
+    #slidgraphe{
+        font-size: 30px;
+    }
+   
 }
 
 
@@ -64,20 +88,20 @@
 
 
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
-    /*!==============  *HEADER*  ===========*/
-     header {
-        height: 70vh;
+    /*!============  *SLIDER*  =========*/
+    .CSSgal {
+        height: 60vh;
+        max-height: 60vh;
     }
-    header h1 {
-        bottom: 50px;
-        font-size: 5vw;
-        width: auto;
-        left: 10px;
+    .slider-txt{
+        margin-top: 20vh;
     }
-    header h2 {
-        font-size: 3vw;
-        left: 10px;
-    }   
+    #slidtitle {
+        font-size: 50px;
+    }
+    #slidgraphe{
+        font-size: 20px;
+    }
 
     /*!============  *NAV*  =========*/
     .navbar :is(.hamburger-btn, .close-btn) {
@@ -334,15 +358,21 @@
         padding: 7px 10px;
     }
 
-
     
-    /*!============  *HEADER*  =========*/
-    header {
+    /*!============  *SLIDER*  =========*/
+    .CSSgal {
         height: 60vh;
-        background: url(../images/bg01.jpg);
-        background-position: center;
+        max-height: 60vh;
     }
-
+    .slider-txt{
+        margin-top: 20vh;
+    }
+    #slidtitle {
+        font-size: 40px;
+    }
+    #slidgraphe{
+        font-size: 20px;
+    }
 
     /*!=======* ZONE DETENTE ========*/
     .ZoneDetente{
