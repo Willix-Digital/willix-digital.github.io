@@ -3,6 +3,16 @@
     header{
         height: 35vh;
       }
+      .slider-txt{
+        margin-top: 20vh;
+    }
+    #slidtitle {
+        font-size: 70px;
+    }
+    #slidgraphe{
+        font-size: 30px;
+    }
+        
     /*!============  *FORMULAIRE*  =========*/
     .formulaire {
         width: 65VW;
@@ -36,6 +46,24 @@
         padding: 10px 120px;
     }
 
+    /*!============  *A PROPOS*  =========*/
+    .a-propos {
+        width: 1700px;
+        max-width: 100%;
+        height:440px;
+    }
+
+    /*!============  *A PROPOS*  =========*/
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 4) - 10px);
+    }
+    /*!============  *Galérie*  =========*/
+    .ma-galerie {
+        grid-template-columns: repeat(3, 250px);
+    }
+    .ma-galerie img{
+        width: 250px;
+    }
 }
 
 
@@ -73,7 +101,7 @@
         margin-top: 30vh;
     }
     #slidtitle {
-        font-size: 80px;
+        font-size: 120px;
     }
     #slidgraphe{
         font-size: 30px;
@@ -708,13 +736,13 @@
     .prestations{
         max-height: auto;
         min-height: auto;
-        grid-template-columns: repeat(2, 100px);
-        gap: 20px;
+        grid-template-columns: repeat(auto-fill, 50px);
+        gap: 45px;
         height: 300px;
     }
     .presta{
-        height:120px;
-        width: 100px;
+        height:50px;
+        width: 50px;
         margin: auto;
         text-align: center;
         gap: 0;
@@ -795,6 +823,7 @@
         transition: all 0.2s ease-out;
         font-family: 'Quicksand';
         font-weight: bold;
+        margin: auto;
     }
     
     .msg-txt .button a {
