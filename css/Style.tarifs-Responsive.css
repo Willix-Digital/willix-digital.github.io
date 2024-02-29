@@ -4,232 +4,63 @@
     header {
       height: 50vh;
     }
-    /*!=======*PROMOTE========*/
-
-    .Promote {
-        height: 10vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    /*!=======*PROMOTION========*/
-
-    .promotions {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        height: 30vh;
-        min-height: 10vh;
-        padding-top: 30px;
-        background-color: #F1DEC9;
-        flex-wrap: wrap;
-        padding-bottom: 150px;
-    }
-    .promotions-txt {
-        margin: 20px 0;
-    }
 
 
   }
-
-@media screen and (max-width:1024px){
-    .promotions {
-        height: auto;
-        width: 100%;
-    }
-
-    /*!=======*NOSMASSAGES========*/ 
-    .cartemassage{
-        width: 95%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 250px);
-        justify-content: center;
-        align-items: center;
-        grid-gap: 10px;
-        padding:  20px 5px;
-        cursor: pointer;
-    }
-    .carte-item {
-        width: 250px;
-        height: 250px;
-        background-color: #F1DEC9;
-        border-radius: 35px;
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 8px 0;
-    }
-}
-@media screen and (max-width:900px) {
-    /*!=======*HEADER========*/
-
-    header {
-        height: 50vh;
-        background-image: url(../images/za-2.jpg);
-    }
-    nav {
-        background-color: #483630;
-        height: 55px;
-        padding: 0;
-        position:fixed;
-    }
-    .scroll {
-        background-color: #483630;
-        transition: all 0.3s ease;
-    }
-    #logo a {
-        font-size: 17px;
-        padding-left: 10px;
-    }
-    .menu-hamburger {
-        font-size: 20px;
-        padding-right: 10px;
-    
-    }
-    .header-txt .button {
-        margin-top: 15px;
-        padding: 5px 20px;
-        font-size: 15px;
-    }
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
    
-    /*!=======* SERVICE ========*/
-     .promotions-txt h1 {
-        margin-top: 55px;
-    }
+        /*!=======* PROMOTIONS  ========*/
+        .wrapper .carousel {
+            grid-auto-columns: calc((100% / 5) - 10px);
+            overflow: hidden;
+        }
     
-    .wrapper .carousel {
-        width: 100%;
-        grid-auto-columns: calc((100% / 3) - 8px);
-    }
-    .card img {
-        height:250px;
-        width: 85%;
-    }
+        /*!=======* FOOTER  ========*/
+        footer {
+            height: auto;
+            padding: 20px 0;
+        }
     
-    /*!=======*NOSMASSAGES========*/
-    .menu{
-        position: relative;
-        left: 0;
-        height: auto;
-        width: 350px;
-        max-width: 100%; 
-        margin: 40px 0;
-    } 
-    .menu .item-menu{
-        border-radius: 50%;
-        height:100px;
-        width: 100px;
-        margin: auto;
-        text-align: center;
-    }
-    .soins h1 {
-        font-size: 40px;
-    }
-    .nosmassages{ 
-        flex-wrap: wrap;
-    }
+        .part1 {
+            height: 80%;
+            flex-wrap: wrap;
+        }    
+        .part2 {
+            height: 20%;
+            flex-wrap: wrap;
+        }
+        .Lehahiahangel {
+            width: 90%;
+        }
+        .Lehahiahangel button {
+            width: 40%;
+            font-size: 20px;
+        }
+        .Nospages {
+            width: 90%;
+        }
+    
+        .Nouscontacter {
+            width: 90%;
+        }
+    
+        .Horraires {
+            width: 90%;
+        }
 
-    /*!=======* FOOTER  ========*/
-    footer {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .part1 {
-        height: 80%;
-        flex-wrap: wrap;
-    }    
-    .part2 {
-        height: 20%;
-        flex-wrap: wrap;
-    }
-    .Lehahiahangel {
-        width: 90%;
-    }
-    .Lehahiahangel button {
-        width: 40%;
-        font-size: 20px;
-    }
-    .Nospages {
-        width: 90%;
-    }
-
-    .Nouscontacter {
-        width: 90%;
-    }
-
-    .Horraires {
-        width: 90%;
-    }
 }
 
-@media screen and (max-width:768px) {
-
-    .promotions {
-        height: 100vw;
-        padding-bottom: 60px;
-        margin: auto;
-    }
-    .promotions-txt {
-        margin: 0;
-    }
-
-    #logo a {
-        font-size: 23px;
-        padding-left: 20px;
-    }
-
-    .menu-hamburger {
-        font-size: 26px;
-        padding-right: 20px;
-    }
-
-
-    .Promote {
-        display: none;
-    }
-    
-    /*!=======* SERVICE ========*/
-    .wrapper .carousel {
-        grid-auto-columns: calc((100% / 1) - 8px);
-    }
-
-    /*!=======*NOSMASSAGES========*/
-    .nosmassages{
-        height: auto;
-        width: 100vw;
-    }
-    .menu{
-        width: 95%;
-        max-width: 950%; 
-        margin: 10px auto;
-    }
-    .cartemassage{
-        width: 100%;
-        grid-template-columns: repeat(auto-fill, 208px);
-    }
-    .carte-item {
-        width: 208px;
-        height: 200px;
-    }
-    .carte-txt h3 {
-        font-size: 15px;
-        padding: 0 15px;
-    }
-    
-    .carte-txt h4 {
-        font-size: 12px;
-    }
+@media only screen and (max-width: 999px)  and (min-width: 500px) {
+   /*!=======* PROMOTIONS  ========*/
+   .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3) - 10px);
 }
-@media screen and (max-width:425px) {}
-@media screen and (min-height:3080px) {
-    header {
-        height: 70vh;
-        background-image: url(../images/za-2.jpg);
-    }
 }
+
+
+
+    
+
 
 
 
