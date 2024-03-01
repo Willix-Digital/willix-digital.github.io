@@ -51,26 +51,41 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(autoChangeSlide, 20000);
 });
 
-// Gestion du changement de style de la barre de navigation lors du défilement
-document.addEventListener("DOMContentLoaded", function () {
-  const navBar = document.querySelector(".nav-bar");
+/*!
+=================================================================================================================================
+     *Gestion du changement de style de la barre de navigation lors du défilement
+=================================================================================================================================
+*/
 
-  window.addEventListener("scroll", () => {
-    navBar.classList.toggle("scroll", window.scrollY > 0);
-  });
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+  var navLinks = document.querySelectorAll(".links a");
+  var logoLink = document.querySelector("#logo a");
+  var loginBtn = document.querySelector(".login-btn");
+  var scrolled = window.scrollY > 3; // 3mm de défilement
+
+  if (scrolled) {
+    navbar.classList.add("scrolled");
+    navLinks.forEach(function (link) {
+      link.classList.add("scrolled");
+    });
+    logoLink.classList.add("scrolled"); // Ajout de la classe pour le lien du logo
+    loginBtn.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+    navLinks.forEach(function (link) {
+      link.classList.remove("scrolled");
+    });
+    logoLink.classList.remove("scrolled"); // Suppression de la classe pour le lien du logo
+    loginBtn.classList.remove("scrolled");
+  }
 });
 
-//Changement d'image sous moble
-function changeImage() {
-  var image = document.querySelector(".responsiveImage");
-  if (window.innerWidth < 900) {
-    image.src = "images/bg01.jpg";
-  } else {
-    image.src = "images/bg01.jpg";
-  }
-}
-window.onload = changeImage;
-window.onresize = changeImage;
+/*!
+=================================================================================================================================
+     *
+=================================================================================================================================
+*/
 
 // Gestion du carrousel infini
 const wrapper = document.querySelector(".wrapper");
@@ -170,37 +185,27 @@ document.addEventListener("DOMContentLoaded", function () {
       toTopButton.style.display = "none";
     }
   });
-
-  // Scroll vers le haut de la page lorsque le bouton est cliqué
-  toTopButton.addEventListener("click", function () {
-    scrollToTop(1500);
+  /*!
+=================================================================================================================================
+     *BOUTON TOP
+=================================================================================================================================
+*/
+$(document).ready(function(){
+  $(window).on('scroll', function(){
+      var heightWindow = $(window).height(),
+          heightPage = $(document).height(),
+          total = heightPage - heightWindow;
+      if(total >= 115){
+          if($(this).scrollTop() > 150){ // Correction ici
+              $('#btnTop').fadeIn();
+          } else {
+              $('#btnTop').fadeOut();
+          }
+      }
   });
 
-  // Fonction pour effectuer le scroll vers le haut de la page avec une animation
-  function scrollToTop(duration) {
-    var start = window.scrollY || document.documentElement.scrollTop,
-      currentTime = 0,
-      increment = 20;
-
-    var animateScroll = function () {
-      currentTime += increment;
-      var val = Math.easeInOutExpo(currentTime, start, -start, duration);
-      document.body.scrollTop = val;
-      document.documentElement.scrollTop = val;
-
-      if (currentTime < duration) {
-        setTimeout(animateScroll, increment);
-      }
-    };
-
-    animateScroll();
-  }
-
-  // Fonction d'interpolation pour l'animation de défilement
-  Math.easeInOutExpo = function (t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * Math.pow(2, 10 * (t - 1)) + b;
-    t--;
-    return (c / 2) * (-Math.pow(2, -10 * t) + 2) + b;
-  };
+  $('#btnTop').on('click', function(){
+      $('html, body').animate({scrollTop : 0}, 500);
+      return false;
+  });
 });
