@@ -643,9 +643,12 @@
     .navbar :is(.hamburger-btn, .close-btn) {
         display: block;
         font-size: 35px;
+        color: white;
     }
     .navbar {
         padding: 15px 0;
+        justify-content: space-between;
+        padding: auto 40px;
     }
     .navbar .logo img {
         display: none;
@@ -731,7 +734,8 @@
         min-height: auto;
         grid-template-columns: repeat(auto-fill, 50px);
         gap: 45px;
-        height: 300px;
+        height: 150px;
+        margin: 10px 0;
     }
     .presta{
         height:50px;
@@ -764,8 +768,10 @@
         height:80px;
         width: 80px;
     }
-
-
+    /*!============  *Slider*  =========*/
+    .social-header a{
+        font-size: 20px;
+    }
     /*!=======*A PROPOS========*/
     .a-propos {
         width: 1700px;
@@ -885,6 +891,16 @@
         background: #333;
     }
 
+    /*!=======* FOOTER  ========*/
+    .localisation{
+        height: auto;
+    }
+    .localisation h1{
+        font-size: 50px;
+        color: #884A39;  
+        font-family: 'Quicksand';
+        margin: 5px 0;
+    }
 
     /*!=======* FOOTER  ========*/
     footer {

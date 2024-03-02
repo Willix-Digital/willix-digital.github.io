@@ -190,22 +190,55 @@ document.addEventListener("DOMContentLoaded", function () {
      *BOUTON TOP
 =================================================================================================================================
 */
-$(document).ready(function(){
-  $(window).on('scroll', function(){
-      var heightWindow = $(window).height(),
-          heightPage = $(document).height(),
-          total = heightPage - heightWindow;
-      if(total >= 115){
-          if($(this).scrollTop() > 150){ // Correction ici
-              $('#btnTop').fadeIn();
-          } else {
-              $('#btnTop').fadeOut();
-          }
-      }
+  // Scroll vers le haut de la page lorsque le bouton est cliqué
+  toTopButton.addEventListener("click", function () {
+    scrollToTop(1500);
   });
 
-  $('#btnTop').on('click', function(){
-      $('html, body').animate({scrollTop : 0}, 500);
-      return false;
-  });
+  // Fonction d'interpolation pour l'animation de défilement
+  Math.easeInOutExpo = function (t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * Math.pow(2, 10 * (t - 1)) + b;
+    t--;
+    return (c / 2) * (-Math.pow(2, -10 * t) + 2) + b;
+  };
+});
+
+/*!
+=================================================================================================================================
+     *DEFILEMENT AUTOMATIQUE DU SLIDER 
+=================================================================================================================================
+*/
+
+$(document).ready(function () {
+  var currentSlide = 1;
+  var totalSlides = $(".slider > div").length; // Nombre total de slides
+  var slideInterval = 5000; // Intervalle en millisecondes entre chaque changement de slide
+
+  function nextSlide() {
+    if (currentSlide < totalSlides) {
+      currentSlide++;
+    } else {
+      currentSlide = 1;
+    }
+
+    // Calcule la nouvelle position du slider en pourcentage
+    var newPosition = (currentSlide - 1) * -100;
+
+    // Applique la transformation au slider
+    $(".slider").css("transform", "translateX(" + newPosition + "%)");
+  }
+
+  // Démarre le défilement automatique
+  var autoSlide = setInterval(nextSlide, slideInterval);
+
+  // Arrête le défilement automatique lorsque la souris survole le slider
+  $(".slider").hover(
+    function () {
+      clearInterval(autoSlide);
+    },
+    function () {
+      autoSlide = setInterval(nextSlide, slideInterval);
+    }
+  );
 });
