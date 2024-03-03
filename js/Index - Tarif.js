@@ -87,3 +87,23 @@ document.addEventListener("DOMContentLoaded", function () {
     slider.scrollLeft += 200; // Vous pouvez ajuster la valeur selon votre besoin
   });
 });
+
+/*!
+=================================================================================================================================
+     *Affichage des soins
+=================================================================================================================================
+*/
+const listesSoinsVisages = document.querySelectorAll("#SOINS-VISAGES");
+const listesMassages = document.querySelector("#MASSAGE");
+const zonnedAffichage = document.querySelector("#cartessoins");
+
+listesMassages.addEventListener("click", () => {
+  // Use fetch to get the content of "massage.html"
+  fetch("massages.html")
+    .then((response) => response.text())
+    .then((content) => {
+      // Set the innerHTML of cartessoins to the content of "massage.html"
+      zonnedAffichage.innerHTML = content;
+    })
+    .catch((error) => console.error("Error fetching massage content:", error));
+});

@@ -49,7 +49,7 @@ body{
     align-items: center;
     width: 100vw;
     max-width: 100%;
-    height: 50px;
+    height: 10px;
     justify-content: space-around;
     margin: auto;
     background-color: inherit;
@@ -491,15 +491,14 @@ header::before {
      *NOSMASSAGES
 =================================================================================================================================
 */
-.nosmassages{
+.nossoins{
     max-width: 1700px;
-    height: auto;
+    height: 100vh;
     max-width: 100%; 
     display: flex;   
     flex-wrap: nowrap;
     align-content: center;
     margin: auto;
-    display: none;
 }
 
 .menu{
@@ -520,7 +519,7 @@ header::before {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     gap: 10px;
-    padding: 3px 0;
+    padding: 3px 40px;
 }
 
 .menu .item-menu{
@@ -568,86 +567,29 @@ header::before {
     flex-wrap:wrap;
     height: auto;
     margin: auto;
-    width: 65%;
+    width: 100%;
+    height: 80%;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .soins h1 {
     text-align: center;
-    font-size: 70px;
-    color: #ddbf9c;
+    font-size: 30px;
+    color: #ce8f2d;
     font-family: 'Quicksand';
     margin: auto;
+    width: 100%;
 }
-.cartemassage{
+.cartessoins{
     width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
+    height: 80%;
+    background-color: #ddbf9c;
+    border: 1px solid #694d4569;
     padding:  20px 5px;
     cursor: pointer;
 }
-.carte-item {
-    width: 200px;
-    height: 200px;
-    background-color: #694d45;
-    border-radius: 5px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 8px 0;
-}
 
-
-.cartemassage :hover{
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 5px 5px #ddbf9c;
-}
-.carte-item img{
-    height: 60%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    -webkit-border-top-left-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -moz-border-radius-topleft: 15px;
-    -moz-border-radius-topright: 15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.carte-txt{
-    height: 40%;
-    width: 100%;
-    background-color: #f1dec9;
-    -webkit-border-bottom-right-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    -moz-border-radius-bottomright: 15px;
-    -moz-border-radius-bottomleft: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    font-family: 'Quicksand';
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1px;
-}
-
-.carte-txt h3 {
-    font-size: 15px;
-    text-align: center;
-    width: 100%;
-}
-
-.carte-txt h4 {
-    font-size: 10px;
-    background-color: #694d45;
-    padding: 10px;
-    border-radius: 5px;
-    color: white;
-}
 /*!
 =================================================================================================================================
      *FOOTER

@@ -1,0 +1,55 @@
+.massage {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    grid-gap: 0.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.massage .image {
+    display: block;
+    background-color: black;
+    height: 17em;
+    gap:3px
+    
+  }
+  .zz {
+    height: 70%;
+    background-color: white;
+    border: 1px solid black;
+    background-image: url(https://img.freepik.com/photos-gratuite/jolie-femme-africaine-beneficiant-massage-du-visage-dans-salon-spa_176420-13955.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .zz::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity:35%;
+  }
+  .zz h1{
+    position:relative;
+    font-size:30px
+    z-index:1;
+  }
+  
+  .zz2{
+    height:25%;
+    background-color:White;
+    border : 1px solid black;
+    text-align:center;
+  }
+  
+  .zz2 h1{
+    font-size:20px
+  }
