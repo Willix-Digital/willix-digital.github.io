@@ -1,17 +1,32 @@
 @media (orientation: portrait) {
     /*!=======*HEADER========*/
-
     header {
       height: 50vh;
     }
+}
 
 
-  }
-@media only screen and (min-width: 900px) and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 4) - 10px);
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
    
         /*!=======* PROMOTIONS  ========*/
         .wrapper .carousel {
-            grid-auto-columns: calc((100% / 5) - 10px);
+            grid-auto-columns: calc((100% / 3) - 10px);
             overflow: hidden;
         }
     
@@ -50,11 +65,11 @@
 
 }
 
-@media only screen and (max-width: 999px)  and (min-width: 500px) {
+@media only screen and (max-width: 999px) {
    /*!=======* PROMOTIONS  ========*/
    .wrapper .carousel {
-    grid-auto-columns: calc((100% / 3) - 10px);
-}
+    grid-auto-columns: calc((100% / 2) - 10px);
+    }
 }
 
 
