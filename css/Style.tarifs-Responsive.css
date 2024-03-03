@@ -70,6 +70,53 @@
    .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 10px);
     }
+
+    /*!============  *NAV*  =========*/
+    .navbar :is(.hamburger-btn, .close-btn) {
+        display: block;
+        font-size: 35px;
+        color: white;
+    }
+    .navbar {
+        padding: 15px 0;
+        justify-content: space-around;
+        padding: auto ;
+        gap: 60%;
+        height: 12px;
+    }
+    .navbar .logo img {
+        display: none;
+    }
+    .navbar .logo h2 {
+        font-size: 1.4rem;
+    }
+    .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 99999;
+        left: -100%;
+        display: block;
+        height: 60vh;
+        width: 100%;
+        padding-top: 60px;
+        text-align: center;
+        background: #ce8f2d;  
+        transition: 0.2s ease;
+    }
+    .navbar .links.show-menu {
+        left: 0;
+    }
+    .navbar .links a {
+        display: inline-flex;
+        margin: 20px 0;
+        font-size: 1.2rem;
+        color: white;
+        border: 2px solid white; 
+        padding: 2px 20px;
+    }
+    .navbar .login-btn {
+        display: none; 
+    }
 }
 
 

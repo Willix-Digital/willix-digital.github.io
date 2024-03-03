@@ -72,7 +72,7 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 nav{
@@ -151,9 +151,12 @@ nav{
     color: #694d45; 
     border: 2px solid #694d45;
 }
-.links a.scrolled,
-#logo a.scrolled {
+.links a.scrolled,#logo a.scrolled {
     color: #694d45; 
+}
+
+.navbar :is(.hamburger-btn, .close-btn) {
+    color: white;
 }
 /*!
 =================================================================================================================================
@@ -535,7 +538,7 @@ nav{
     z-index: 1;
 }
 .social-header{
-    z-index: 3;
+    z-index: 2;
     position:absolute;
     display: flex;
     flex-wrap: wrap;
@@ -1081,7 +1084,7 @@ transform: scale(1.1);
     font-size: 50px;
     color: #884A39;  
     font-family: 'Quicksand';
-    margin: 20px 0 40px 0;
+    margin: 20px 0 10px 0;
 }
 
 #map{
