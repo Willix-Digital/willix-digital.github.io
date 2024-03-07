@@ -63,11 +63,6 @@
     }
 }
 
-
-
-
-
-
 @media only screen and (max-width: 1440px) {
     .CSSgal {
         height: 100vh;
@@ -132,11 +127,6 @@
         transform: translateY(-50%); 
     }
 }
-
-
-
-
-
 
 
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
@@ -370,9 +360,6 @@
     
     }
 }
-
-
-
 
 
 @media only screen and (max-width: 999px)  and (min-width: 500px) {
@@ -700,10 +687,6 @@
     }
 }
 
-
-
-
-
    
 @media only screen and (max-width: 500px) {
     /*!============  *HEIGHT*  =========*/
@@ -774,265 +757,266 @@
         background: url(../images/bg01.jpg);
         background-position: center;
     }
-    }
     .social-header{
-    display: none;
-    }
-
-
-    /*!=======* ZONE DETENTE ========*/
-    .ZoneDetente{
         display: none;
-    }
-
-
-    /*!============  *FORMULAIRE*  =========*/
-    .form-popup {
-        width: 95%;
-    }
-    .form-box .form-details {
-        display: none;
-    }
-    .form-box .form-content {
-        padding: 30px 20px;
-    }
-    .formulaire {
-        width: 85VW;
-        height: 75vh;
-    }
-    .elementform h2 {
-        font-size: 6vw;
-    }
-    .elementform {
-        height: 95%;
-        width: 85%;    
-    }
-    .elementform  ::placeholder {
-        font-size: 15px;  
-    }
-    .btnreserver{
-        font-size: 15px;
-    }
-
-
-    /*!=======* PRESTATIONS ========*/
-    .prestations{
-        max-height: auto;
-        min-height: auto;
-        grid-template-columns: repeat(auto-fill, 50px);
-        gap: 45px;
-        height: 150px;
-        margin: 10px 0;
-    }
-    .presta{
-        height:50px;
-        width: 50px;
-        margin: auto;
-        text-align: center;
-        gap: 0;
-        padding:5px 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-items: center;
-        margin: auto;
-    }
-    .presta h1{
-        font-size: 15px;
-        margin: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
+        }
     
-    .presta h3{
-        display: none;
-    }
+        /*!=======* ZONE DETENTE ========*/
+        .ZoneDetente{
+            display: none;
+        }
     
-    .presta p{
-        display: none;
-    }
-    .presta img{
-        height:80px;
-        width: 80px;
-    }
-    /*!============  *Slider*  =========*/
-    .social-header a{
-        font-size: 20px;
-    }
-    /*!=======*A PROPOS========*/
-    .a-propos {
-        width: 1700px;
-        max-width: 100%;
-        height:340px;
-        display: flex;
-        justify-content:left;
-        align-items: center;
-        flex-wrap: nowrap;
-        margin: auto; 
-        background-color: #ce8f2d;
-        background: url(../images/transparents);
-        text-align: center;
-    }
-    .propos-msg {
-        position: relative;
-        flex-wrap: wrap;
-        gap: 5px;
-        margin: auto;
-    }
-    .msg-txt {
-        max-width: 100%;
-        margin: auto;
-        background-color: transparent;
-    }
-    .msg-txt h1 {
-        font-size: 30px;
-        color: black;
-        margin-bottom: 10px;
-    }
-    .msg-txt p span a {
-        color: #C38154; 
-    }
-    .msg-txt p {
-        font-size: 15px;
-        color: black;
-    }
-    .msg-txt .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2px 25px;
-        cursor: pointer;
-        background-color: transparent;
-        border: 1px solid black;
-        color:black;
-        font-size: 20px;
-        transition: all 0.2s ease-out;
-        font-family: 'Quicksand';
-        font-weight: bold;
-        margin: auto;
-    }
     
-    .msg-txt .button a {
-        color: black;;
-        margin: auto;
-    }
+        /*!============  *FORMULAIRE*  =========*/
+        .form-popup {
+            width: 95%;
+        }
+        .form-box .form-details {
+            display: none;
+        }
+        .form-box .form-content {
+            padding: 30px 20px;
+        }
+        .formulaire {
+            width: 85VW;
+            height: 75vh;
+        }
+        .elementform h2 {
+            font-size: 6vw;
+        }
+        .elementform {
+            height: 95%;
+            width: 85%;    
+        }
+        .elementform  ::placeholder {
+            font-size: 15px;  
+        }
+        .btnreserver{
+            font-size: 15px;
+        }
     
-    .msg-txt .button:hover {
-        color: black; 
-        box-shadow: 0 0 10px 5px #C38154; 
-        border: 1px solid transparent;
+    
+        /*!=======* PRESTATIONS ========*/
+        .prestations{
+            max-height: auto;
+            min-height: auto;
+            grid-template-columns: repeat(auto-fill, 50px);
+            gap: 45px;
+            height: 150px;
+            margin: 10px 0;
+        }
+        .presta{
+            height:50px;
+            width: 50px;
+            margin: auto;
+            text-align: center;
+            gap: 0;
+            padding:5px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-items: center;
+            margin: auto;
+        }
+        .presta h1{
+            font-size: 15px;
+            margin: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .presta h3{
+            display: none;
+        }
+        
+        .presta p{
+            display: none;
+        }
+        .presta img{
+            height:80px;
+            width: 80px;
+        }
+        /*!============  *Slider*  =========*/
+        .social-header a{
+            font-size: 20px;
+        }
+        /*!=======*A PROPOS========*/
+        .a-propos {
+            width: 1700px;
+            max-width: 100%;
+            height:340px;
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin: auto; 
+            background-color: #ce8f2d;
+            background: url(../images/transparents);
+            text-align: center;
+        }
+        .propos-msg {
+            position: relative;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: auto;
+        }
+        .msg-txt {
+            max-width: 100%;
+            margin: auto;
+            background-color: transparent;
+        }
+        .msg-txt h1 {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 10px;
+        }
+        .msg-txt p span a {
+            color: #C38154; 
+        }
+        .msg-txt p {
+            font-size: 15px;
+            color: black;
+        }
+        .msg-txt .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2px 25px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 1px solid black;
+            color:black;
+            font-size: 20px;
+            transition: all 0.2s ease-out;
+            font-family: 'Quicksand';
+            font-weight: bold;
+            margin: auto;
+        }
+        
+        .msg-txt .button a {
+            color: black;;
+            margin: auto;
+        }
+        
+        .msg-txt .button:hover {
+            color: black; 
+            box-shadow: 0 0 10px 5px #C38154; 
+            border: 1px solid transparent;
+        }
+    
+        .to-top  {
+            display: none;
+            visibility: hidden;
+        }
+    
+    
+        /*!=======* SERVICE ========*/
+        .services {
+            margin-top: 0px;
+        }
+        .service-txt h1 {
+            font-size: 35px;
+        }
+        .a-propos {
+            height: auto;
+        }
+        .msg-txt {
+            height: auto;
+        }
+        .wrapper .carousel {
+            grid-auto-columns: calc((100% / 1) - 8px);
+        }
+        .carousel .card {
+            scroll-snap-align: start;
+            max-height:300px;
+            width: 100%;
+            list-style: none;
+            background: #c28743;     
+            flex-direction: column;
+            overflow: hidden;
+            color: white;
+        }
+    
+    
+        /*!=======* GALÉRIE ========*/
+        .gal-txt h1 {
+            font-size: 40px;
+        }
+        .ma-galerie {
+            max-width: 1400px;
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            /* border: 1px solid #333; */
+            display: grid;
+            grid-template-columns: repeat(1, 300px);
+            justify-content: center;
+            grid-gap: 20px;
+        }
+        .ma-galerie img{
+            width: 300px;
+            height: 200px;
+            background: #333;
+        }
+    
+        /*!=======* FOOTER  ========*/
+        .localisation{
+            height: auto;
+        }
+        .localisation h1{
+            font-size: 50px;
+            color: #884A39;  
+            font-family: 'Quicksand';
+            margin: 5px 0;
+        }
+    
+        /*!=======* FOOTER  ========*/
+        footer {
+            height: auto;
+            padding: 20px 0;
+        }
+        .Lehahiahangel p{
+            font-size: 20px;
+        }
+        .Nospages a{
+            font-size: 20px;
+        }
+        .Nouscontacter a{
+            font-size: 20px;
+        }
+        .part1 {
+            height: 80%;
+            flex-wrap: wrap;
+        }  
+        .part2 {
+            height: 20%;
+            flex-wrap: wrap;
+        }
+        .Lehahiahangel {
+            width: 90%;
+        }
+        .Lehahiahangel button {
+            width: 40%;
+            font-size: 20px;
+        }
+        .Nospages {
+            width: 90%;
+        }
+        .Nouscontacter {
+            width: 90%;
+            padding: 0;
+            margin: 0;
+        }
+        .Horraires {
+            width: 90%;
+        }
+        .Horraires p {
+            font-size: 20px;
+            font-family: 'Quicksand';
+            font-weight: 400;
+        }
     }
 
-    .to-top  {
-        display: none;
-        visibility: hidden;
-    }
 
 
-    /*!=======* SERVICE ========*/
-    .services {
-        margin-top: 0px;
-    }
-    .service-txt h1 {
-        font-size: 35px;
-    }
-    .a-propos {
-        height: auto;
-    }
-    .msg-txt {
-        height: auto;
-    }
-    .wrapper .carousel {
-        grid-auto-columns: calc((100% / 1) - 8px);
-    }
-    .carousel .card {
-        scroll-snap-align: start;
-        max-height:300px;
-        width: 100%;
-        list-style: none;
-        background: #c28743;     
-        flex-direction: column;
-        overflow: hidden;
-        color: white;
-    }
-
-
-    /*!=======* GALÉRIE ========*/
-    .gal-txt h1 {
-        font-size: 40px;
-    }
-    .ma-galerie {
-        max-width: 1400px;
-        width: 100%;
-        height: auto;
-        margin: 30px auto;
-        /* border: 1px solid #333; */
-        display: grid;
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-        grid-gap: 20px;
-    }
-    .ma-galerie img{
-        width: 300px;
-        height: 200px;
-        background: #333;
-    }
-
-    /*!=======* FOOTER  ========*/
-    .localisation{
-        height: auto;
-    }
-    .localisation h1{
-        font-size: 50px;
-        color: #884A39;  
-        font-family: 'Quicksand';
-        margin: 5px 0;
-    }
-
-    /*!=======* FOOTER  ========*/
-    footer {
-        height: auto;
-        padding: 20px 0;
-    }
-    .Lehahiahangel p{
-        font-size: 20px;
-    }
-    .Nospages a{
-        font-size: 20px;
-    }
-    .Nouscontacter a{
-        font-size: 20px;
-    }
-    .part1 {
-        height: 80%;
-        flex-wrap: wrap;
-    }  
-    .part2 {
-        height: 20%;
-        flex-wrap: wrap;
-    }
-    .Lehahiahangel {
-        width: 90%;
-    }
-    .Lehahiahangel button {
-        width: 40%;
-        font-size: 20px;
-    }
-    .Nospages {
-        width: 90%;
-    }
-    .Nouscontacter {
-        width: 90%;
-        padding: 0;
-        margin: 0;
-    }
-    .Horraires {
-        width: 90%;
-    }
-    .Horraires p {
-        font-size: 20px;
-        font-family: 'Quicksand';
-        font-weight: 400;
-    }
-}
-
+   

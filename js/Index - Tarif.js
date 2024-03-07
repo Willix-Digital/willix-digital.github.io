@@ -97,13 +97,13 @@ const listesSoinsVisages = document.querySelectorAll("#SOINS-VISAGES");
 const listesMassages = document.querySelector("#MASSAGE");
 const zonnedAffichage = document.querySelector("#cartessoins");
 
-listesMassages.addEventListener("click", () => {
-  // Use fetch to get the content of "massage.html"
-  fetch("massages.html")
-    .then((response) => response.text())
-    .then((content) => {
-      // Set the innerHTML of cartessoins to the content of "massage.html"
-      zonnedAffichage.innerHTML = content;
-    })
-    .catch((error) => console.error("Error fetching massage content:", error));
-});
+function chargerContenu(url, idZone) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById(idZone).innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}

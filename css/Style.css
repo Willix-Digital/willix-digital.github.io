@@ -421,7 +421,7 @@ nav{
 .CSSgal{
 	color: #fff;	
 	text-align: center;
-    position: relative;
+    position: ab;
     width: 100vw;
     max-width: 100%;
 }
@@ -432,7 +432,6 @@ nav{
 	font-size: 3em;
 }
 .CSSgal a {
-	border-radius: 50%;
 	margin: 0 3px;
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
@@ -440,11 +439,8 @@ nav{
 }
 
 #slid1{
-    background:#f1dec9;;
-    background-image: url(../images/1big.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background: #f1dec9 url(../images/1big.jpg) center/cover no-repeat;
+    position: relative; 
     justify-content: center;
     align-items: center;
 }
@@ -459,11 +455,10 @@ nav{
     opacity: 40%;
 }
 #slid2{
-    background:#f1dec9;;
-    background-image: url(../images/z2.jpg);
-    background-position: 10% 80%;
-    background-size: cover;
-    position: relative;
+    background:#f1dec9 url(../images/z2.jpg)  center/cover no-repeat;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
 }
 #slid2::before {
     content: "";
@@ -476,10 +471,9 @@ nav{
     opacity: 40%;
 }
 #slid3{
-    background:#f1dec9;;
-    background-image: url(../images/sauna1.jpg);
-    background-position: 10% 70%;
-    background-size: cover;
+    background:#f1dec9 url(../images/sauna1.jpg) center/cover no-repeat;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 #slid3::before {
@@ -493,10 +487,9 @@ nav{
     opacity: 40%;
 }
 #slid4{
-    background:#f1dec9;;
-    background-image: url(../images/bg04.jpg);
-    background-position: center;
-    background-size: cover;
+    background:#f1dec9 url(../images/bg04.jpg) center/cover no-repeat;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 #slid4::before {
