@@ -104,6 +104,7 @@ function chargerContenu(url, idZone) {
       document.getElementById(idZone).innerHTML = this.responseText;
     }
   };
+
   xhttp.open("GET", url, true);
   xhttp.send();
 }
