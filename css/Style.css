@@ -156,7 +156,11 @@ nav{
 }
 
 .navbar :is(.hamburger-btn, .close-btn) {
-    color: white;
+    color: white; 
+}
+
+.color{
+    color: #694d45; 
 }
 /*!
 =================================================================================================================================
@@ -504,7 +508,7 @@ nav{
   }
 
 
-  
+
   .slider-txt{
     display: flex;
     flex-direction: column; 

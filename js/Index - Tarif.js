@@ -69,23 +69,20 @@ signupLoginLink.forEach((link) => {
 
 /*!
 =================================================================================================================================
-     *Responsive Nav Bar
+     *SLIDER
 =================================================================================================================================
 */
+
 document.addEventListener("DOMContentLoaded", function () {
-  var slider = document.querySelector(".carousel");
-  var leftButton = document.getElementById("left");
-  var rightButton = document.getElementById("right");
+  var carousel = document.querySelector(".carousel");
+  var interval = 15000; // 15 secondes
 
-  leftButton.addEventListener("click", function () {
-    // Logique pour déplacer le slider vers la gauche
-    slider.scrollLeft -= 200; // Vous pouvez ajuster la valeur selon votre besoin
-  });
+  function moveCarousel() {
+    var firstCard = carousel.querySelector(".card:first-child");
+    carousel.appendChild(firstCard);
+  }
 
-  rightButton.addEventListener("click", function () {
-    // Logique pour déplacer le slider vers la droite
-    slider.scrollLeft += 200; // Vous pouvez ajuster la valeur selon votre besoin
-  });
+  setInterval(moveCarousel, interval);
 });
 
 /*!

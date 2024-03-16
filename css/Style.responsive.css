@@ -367,14 +367,13 @@
     .navbar :is(.hamburger-btn, .close-btn) {
         display: block;
         font-size: 40px;
-        color: white;
     }
     .navbar {
         padding: 15px 0;
         justify-content: space-around;
         padding: auto ;
         gap: 60%;
-        height: 15px;
+        height: 55px;
     }
     .navbar .logo img {
         display: none;
@@ -392,7 +391,7 @@
         width: 100%;
         padding-top: 60px;
         text-align: center;
-        background: #ce8f2d;  
+        background: #996b36;    
         transition: 0.2s ease;
     }
     .navbar .links.show-menu {
@@ -629,7 +628,7 @@
         margin: 30px auto;
         /* border: 1px solid #333; */
         display: grid;
-        grid-template-columns: repeat(2, 210px);
+        grid-template-columns: repeat(3, 210px);
         justify-content: center;
         grid-gap: 20px;
     }
@@ -706,7 +705,6 @@
     .navbar :is(.hamburger-btn, .close-btn) {
         display: block;
         font-size: 35px;
-        color: white;
     }
     .navbar {
         padding: 15px 0;
@@ -731,7 +729,7 @@
         width: 100%;
         padding-top: 60px;
         text-align: center;
-        background: #ce8f2d;  
+        background: #996b36;    
         transition: 0.2s ease;
     }
     .navbar .links.show-menu {
