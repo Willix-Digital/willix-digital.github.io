@@ -688,6 +688,42 @@
 
    
 @media only screen and (max-width: 500px) {
+    /*!============  *NAV*  =========*/
+     .navbar {
+        margin: auto;
+        padding-top: 10px;
+        padding: 0 ;
+        height: 40px;
+        min-height: 40px;
+        width: 60%;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+    #logo a {
+        font-size: 1.3rem;
+        width: 0%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+    .navbar .links {
+        height: 100vh;
+        max-height: 100%;
+    }
+    /*!============  *SLIDER*  =========*/
+    .CSSgal {
+        height: 60vh;
+        max-height: 60vh;
+    }
+    #slidtitle {
+        font-size: 40px;
+    }
+    #slidgraphe{
+        font-size: 20px;
+    }
+
     /*!============  *HEIGHT*  =========*/
     .slider-txt{
         display: flex;
