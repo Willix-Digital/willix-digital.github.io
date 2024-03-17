@@ -278,32 +278,52 @@ header::before {
     justify-content: flex-start;
     width: 1700px;
     max-width: 100%;
-    height: 420px;
+    height: 620px;
     background-color: #F1DEC9;
     flex-wrap: wrap;
     font-family: 'Quicksand';
     padding: 10px 0;
     margin: 0 auto;
 }
-
+.mespomotions{
+    height: 70%;
+    max-width: 90%;
+    border: 1px solid #c28743;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 .promotions-txt {
-    height: 50px;
+    height: auto;
     width: 100%;
     max-width: 100%;
     max-height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
+    flex-wrap: wrap;
+    background-color: #996b36;
+    margin: auto;
 }
 
 .promotions-txt h1 {
-    font-size: 40px;
-    color: #c28743;    
+    font-size: 30px;
+    color: white;    
+    width: 100%;
+    margin: 5px 20px;
+    margin-top: 20px;
 }
 
+.promotions-txt p {
+    font-size: 20px;
+    color: white;    
+    width: 100%;
+    margin: 5px 20px;
+    margin-bottom: 20px;
+}
 .wrapper {
-    max-width: 90%;
-    height: 180px;
+    width: 100%;
+    height: 200px;
     max-height: 100%;
     position: relative;
     margin: auto;
@@ -311,43 +331,45 @@ header::before {
     align-items: center;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.wrapper i {
+#left, #right {
     top: 50%;
     height:40px;
     width: 40px;
     max-width: 100%;
     max-height: 100%;
     cursor: pointer;
-    font-size: 1.45rem;
+    font-size: 60px;
     position: absolute;
     text-align: center;
     line-height: 40px;
-    background-color:#ddbf9c;
+    background-color:#ce8f2d;
+    color: #ddbf9c;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
 }
 
-.wrapper i:active {
+#left:active,#right:active {
     transform: translateY(-50%) scale(0.85);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper i:first-child {
+#lef {
     left: -22px;
     z-index: 1;
-    color: white;
+    color: #ddbf9c;    
     margin: auto;
 }
 
-.wrapper i:last-child {
+#right{
     right: -22px;
     z-index: 1;
-    color: white;
+    color: #ddbf9c;    
     margin: auto;
 }
 
@@ -392,7 +414,6 @@ header::before {
     max-height:320px;
     width: 100%;
     list-style: none;
-    background: #c28743;     
     flex-direction: column;
     overflow: hidden;
 }
@@ -412,7 +433,8 @@ header::before {
     object-fit: cover;
     transition: transform .4s;
     margin-top: 10px;
-    border: 2px solid #F1DEC9;
+    border: 2px solid #ce8f2d;
+    padding: 3px;
 }
 
 .card  img ::before{
@@ -432,23 +454,25 @@ header::before {
 .carousel .card h2 {
     font-weight: 100;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
 }
 
 
 .carousel .card h6 {
+    display: flex;
+    position: relative;
     font-weight: 100;
     font-size: 20px;
     margin: 5px 0;
-    text-align: center;
+    text-align: left;
     top: 10px;
-    color:#F1DEC9;;
+    color:#ce8f2d;
     z-index: 1;
     font-weight: bold;
 }
 
 .carousel .card span {
-    color: #6A6D78;
+    color: #ce8f2d;
     font-size: 1.31rem;
 }
 
@@ -459,26 +483,28 @@ header::before {
     padding: 2px 20px;
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #F1DEC9;
-    color: #F1DEC9;
+    border: 2px solid #ce8f2d;
+    color: #ce8f2d;
     font-size: 15px;
     transition: all 0.2s ease-out;
     font-family: 'Quicksand';
     font-weight: bold;
-    margin: 10px 0;
+    margin: 15px 0;
 
 }
 
 .btnvr:hover {
-    box-shadow: 0 0 10px 5px #F1DEC9;
+    box-shadow: 0 0 10px 5px #ce8f2d;
     border: 2px solid transparent;
 }
 
 #la{
+    position: relative;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: left;
+    gap: 10px;
 }
 /*!
 =================================================================================================================================
@@ -493,6 +519,7 @@ header::before {
     flex-wrap: nowrap;
     align-content: center;
     margin: auto;
+    display: none;
 }
 
 .menu{

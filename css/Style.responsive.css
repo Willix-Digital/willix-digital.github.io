@@ -2,7 +2,12 @@
     /*!==============  *HEADER*  ===========*/
     header{
         height: 35vh;
+        max-height: 35vh;
       }
+    .CSSgal {
+        height: 35vh;
+        max-height: 35vh;
+    }
     #slidtitle {
         font-size: 70px;
     }
@@ -63,7 +68,7 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 2240px) and (max-width: 1440px) {
     .CSSgal {
         height: 100vh;
         max-height: 100vh;
@@ -82,11 +87,6 @@
         left: 0;
         transform: translateY(-50%); 
     }
-    
-}
-
-
-@media only screen and (min-width: 1440px) {
     .ma-galerie {
         max-width: 1500px;
         width: 80%;
@@ -127,6 +127,7 @@
         transform: translateY(-50%); 
     }
 }
+
 
 
 @media only screen and (min-width: 900px) and (max-width: 1024px) {
@@ -304,61 +305,7 @@
     }
 
    /*!=======* FOOTER  ========*/
-    footer {
-        height: auto;
-        padding: 20px 0;
-    }
-   
-    .Lehahiahangel p{
-        font-size: 20px;
-    }
 
-    .Nospages a{
-        font-size: 20px;
-    }
-
-    .Nouscontacter a{
-        font-size: 20px;
-    }
-
-    .part1 {
-        height: 80%;
-        flex-wrap: wrap;
-    }  
-
-    .part2 {
-        height: 20%;
-        flex-wrap: wrap;
-    }
-
-    .Lehahiahangel {
-        width: 90%;
-    }
-    .Lehahiahangel button {
-        width: 40%;
-        font-size: 20px;
-    }
-
-    .Nospages {
-        width: 90%;
-    }
-   
-    .Nouscontacter {
-        width: 90%;
-        padding: 0;
-        margin: 0;
-    }
-   
-    .Horraires {
-        width: 90%;
-    }
-
-    .Horraires p {
-        font-size: 20px;
-        font-family: 'Quicksand';
-        font-weight: 400;
-    
-    }
 }
 
 
@@ -638,52 +585,6 @@
         background: #333;
     }
 
-
-    /*!=======* FOOTER  ========*/
-    footer {
-        height: auto;
-        padding: 20px 0;
-    }
-    .Lehahiahangel p{
-        font-size: 20px;
-    }
-    .Nospages a{
-        font-size: 20px;
-    }
-    .Nouscontacter a{
-        font-size: 20px;
-    }
-    .part1 {
-        height: 80%;
-        flex-wrap: wrap;
-    }  
-    .part2 {
-        height: 20%;
-        flex-wrap: wrap;
-    }
-    .Lehahiahangel {
-        width: 90%;
-    }
-    .Lehahiahangel button {
-        width: 40%;
-        font-size: 20px;
-    }
-    .Nospages {
-        width: 90%;
-    }
-    .Nouscontacter {
-        width: 90%;
-        padding: 0;
-        margin: 0;
-    }
-    .Horraires {
-        width: 90%;
-    }
-    .Horraires p {
-        font-size: 20px;
-        font-family: 'Quicksand';
-        font-weight: 400;
-    }
 }
 
    
@@ -1003,54 +904,54 @@
             font-family: 'Quicksand';
             margin: 5px 0;
         }
-    
-        /*!=======* FOOTER  ========*/
-        footer {
-            height: auto;
-            padding: 20px 0;
-        }
-        .Lehahiahangel p{
-            font-size: 20px;
-        }
-        .Nospages a{
-            font-size: 20px;
-        }
-        .Nouscontacter a{
-            font-size: 20px;
-        }
-        .part1 {
-            height: 80%;
-            flex-wrap: wrap;
-        }  
-        .part2 {
-            height: 20%;
-            flex-wrap: wrap;
-        }
-        .Lehahiahangel {
-            width: 90%;
-        }
-        .Lehahiahangel button {
-            width: 40%;
-            font-size: 20px;
-        }
-        .Nospages {
-            width: 90%;
-        }
-        .Nouscontacter {
-            width: 90%;
-            padding: 0;
-            margin: 0;
-        }
-        .Horraires {
-            width: 90%;
-        }
-        .Horraires p {
-            font-size: 20px;
-            font-family: 'Quicksand';
-            font-weight: 400;
-        }
+
     }
 
 
 
    
+    @media   (orientation:portrait ) {
+
+    }
+    
+    @media only screen and (max-width: 1240px) {
+        /*!=======* FOOTER  ========*/
+        footer {
+            height: auto;
+        }
+        .part1 {
+            height: auto;
+            grid-template-columns: repeat(4, 250px);
+            margin-bottom: 70px;
+        }
+        .Lehahiahangel,.Nospages,.Nouscontacter,.Horraires  {
+            max-width: 250px;
+        }
+    }
+    
+    @media only screen and (max-width: 990px) {
+        /*!=======* FOOTER  ========*/    
+        footer {
+            height: auto;
+        }
+        .part1 {
+            height: auto;
+            grid-template-columns: repeat(2, 300px);
+        }
+    }
+    
+    @media only screen and (max-width: 750px) {
+        /*!=======* FOOTER  ========*/
+        .part1 {
+            height: auto;
+            grid-template-columns: repeat(1, 300px);
+        }
+    }
+       
+    @media only screen and (max-width: 500px) {
+        
+    }
+    
+    
+    
+       

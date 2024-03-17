@@ -84,24 +84,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(moveCarousel, interval);
 });
-
-/*!
-=================================================================================================================================
-     *Affichage des soins
-=================================================================================================================================
-*/
-const listesSoinsVisages = document.querySelectorAll("#SOINS-VISAGES");
-const listesMassages = document.querySelector("#MASSAGE");
-const zonnedAffichage = document.querySelector("#cartessoins");
-
-function chargerContenu(url, idZone) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById(idZone).innerHTML = this.responseText;
-    }
-  };
-
-  xhttp.open("GET", url, true);
-  xhttp.send();
-}

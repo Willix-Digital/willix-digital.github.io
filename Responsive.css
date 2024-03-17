@@ -1,0 +1,176 @@
+@media screen and (max-width:1024px) {
+    
+}
+
+@media screen and (max-width:900px) {
+    /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    .header-title{
+        width: 50%;
+    }
+
+    .fa-2x{
+        color: #D4ADFC;
+        font-size: 3vw;
+    }
+
+    .mon-img{
+    width: 50%;
+    max-width: 50%;
+    }
+
+    .mon-txt p{
+        margin: 15px 0 60px 0;
+        width: 90%;
+    }
+
+    
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+      /*!
+    =================================================================================================================================
+        *COMPÉTENCES
+    =================================================================================================================================
+    */
+    .compétenses{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .mescompétenses{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .lot{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cmt1{
+        height: 80px;
+        width: 170px;
+    }
+
+    .lot h2{
+        font-size: 2vw;
+    }
+    
+    .lot p{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:720px) {
+     /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    header{
+        height: auto;
+        width: 100vw;  
+    }
+
+    .navbar{
+        width: 55vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbar h1{
+        font-size: 3vw;
+        width: 100%;
+        display: flex;
+    }
+
+    .navbar h1 a{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .navlinks{
+        width: 25%;
+    }
+
+    
+    .header{
+        height: auto;
+        width: 90vw;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+        
+    .header-title{
+        order: 2;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .mon-txt p{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    
+    .mon-img{
+        order: 1;
+        background: url(./Images/portrait\ n&b.png);
+        background-position: center;
+        background-size:cover ;
+        width: 80%;
+        height: 60vh;
+        margin: auto;
+    }
+
+     /*!
+    =================================================================================================================================
+        *COMPÉTENCES
+    =================================================================================================================================
+    */
+    .compétenses{
+        height: auto;
+    }
+
+    .mescompétenses{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        gap: 15px;
+        padding: 20px 0 ;
+    }
+
+
+    .lot{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cmt1{
+        height: 120px;
+        width: 170px;
+    }
+
+    .lot h2{
+        font-size: 2.6vw;
+    }
+    
+    .lot p{
+        font-size: 2vw;
+    }
+
+}
