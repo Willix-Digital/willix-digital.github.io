@@ -909,13 +909,24 @@
 
 
 
-   
+
+
+
+
+
     @media   (orientation:portrait ) {
 
     }
     
     @media only screen and (max-width: 1240px) {
-        /*!=======* FOOTER  ========*/
+        /*!============  *Rdv*  =========*/
+        .rdv{
+            height: 600px;
+            width:1500px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        /*!============  *Footer*  =========*/
         footer {
             height: auto;
         }
@@ -930,18 +941,51 @@
     }
     
     @media only screen and (max-width: 990px) {
-        /*!=======* FOOTER  ========*/    
-        footer {
-            height: auto;
-        }
-        .part1 {
-            height: auto;
-            grid-template-columns: repeat(2, 300px);
-        }
+    /*!============  *Rdv*  =========*/
+    .rdv{
+        height: auto;
+        width:1500px;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .position{
+        width: 95%;
+    }
+    .infosrdv{
+        width: 100%;
+    }
+    .formulairesrdv{
+        width: 100%;
+    }
+    .hoairesetcontacts{
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+    }
+    .horaire{
+        width: 100%;
+    }
+    .time{
+        width: 100%;
+    }
+    .elementform input{
+        width: 100%;
+    }
+    
+    /*!============  *Footer*  =========*/    
+    footer {
+        height: auto;
+    }
+    .part1 {
+        height: auto;
+        grid-template-columns: repeat(2, 300px);
+    }
+    
     }
     
     @media only screen and (max-width: 750px) {
-        /*!=======* FOOTER  ========*/
+    
+    /*!============  *Footer*  =========*/
         .part1 {
             height: auto;
             grid-template-columns: repeat(1, 300px);

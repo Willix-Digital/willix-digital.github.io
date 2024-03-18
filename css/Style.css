@@ -915,6 +915,7 @@ transform: scale(1.1);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 .localisation h1{
     font-size: 50px;
@@ -947,6 +948,120 @@ transform: scale(1.1);
 }
 
 
+/*!
+=================================================================================================================================
+     *rdv
+=================================================================================================================================
+*/
+.rdv{
+    height: 500px;
+    width:1500px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+.infosrdv{
+    height: 90%;
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.infosrdv-head h1{
+    color:#C38154; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.infosrdv-head p{
+    margin-bottom: 20px;
+}
+
+.infosrdv p{
+    color:#222222fb; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    width: 100%;
+}
+.infosrdv i{
+    padding-right: 10px;
+    font-size: 25px;
+    color:#C38154; 
+}
+.position{
+    margin-bottom: 15px;
+}
+.hoairesetcontacts{
+    display: flex;flex-wrap: nowrap;
+    width: 100%;
+    height: 30%;
+    gap: 25px;
+}
+.horaire{
+    width: 55%;
+}
+.time{
+    width: 40%;
+}
+
+.hoairesetcontacts i{
+    padding-right: 10px;
+    font-size: 20px;
+    color:#C38154; 
+}
+.hoairesetcontacts p , .time p , .position p{
+    color:#222222fb; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    width: 100%;
+    padding:10px 0 0 0 ;
+}
+
+
+.formulairesrdv{
+    height: 90%;
+    width: 40%;
+    margin: auto;
+    padding: 40px;
+}
+.elementforms h3{
+   color: rgb(49, 47, 47);
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: 3px;
+   font-size: 18px;
+   text-align:left;
+}
+.elementforms h3 span{
+    padding-left: 3px;
+    color: red;
+}
+.elementforms input{
+    height: 50px;
+    width: 90%;
+    margin-bottom: 25px;
+}
+.elementforms ::placeholder{
+    padding-left: 20px;
+    opacity: 50%;
+}
+.btnreserver{
+    height: 40px;
+    background-color: #C38154;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.btnreserver:hover {
+    border: 1px solid white;
+}
 
 
 
