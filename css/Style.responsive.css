@@ -919,6 +919,7 @@
     }
     
     @media only screen and (max-width: 1240px) {
+        
         /*!============  *Rdv*  =========*/
         .rdv{
             height: 600px;
@@ -941,45 +942,57 @@
     }
     
     @media only screen and (max-width: 990px) {
-    /*!============  *Rdv*  =========*/
-    .rdv{
-        height: auto;
-        width:1500px;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-    .position{
-        width: 95%;
-    }
-    .infosrdv{
-        width: 100%;
-    }
-    .formulairesrdv{
-        width: 100%;
-    }
-    .hoairesetcontacts{
-        display: flex;
-        flex-wrap:wrap;
-        width: 100%;
-    }
-    .horaire{
-        width: 100%;
-    }
-    .time{
-        width: 100%;
-    }
-    .elementform input{
-        width: 100%;
-    }
-    
-    /*!============  *Footer*  =========*/    
-    footer {
-        height: auto;
-    }
-    .part1 {
-        height: auto;
-        grid-template-columns: repeat(2, 300px);
-    }
+        /*!============  *Galéries*  =========*/
+        .ma-galerie {
+            grid-template-columns: repeat(1, 100%);
+        }
+        .ma-galerie img{
+            width: 100%;
+            height: 250px;
+            background: #333;
+            transition: all 0.4s ease-out;
+            overflow: hidden;
+            object-fit: cover;
+        }
+        /*!============  *Rdv*  =========*/
+        .rdv{
+            height: auto;
+            width:1500px;
+            flex-wrap: wrap;
+            margin: auto;
+        }
+        .position{
+            width: 95%;
+        }
+        .infosrdv{
+            width: 100%;
+        }
+        .formulairesrdv{
+            width: 100%;
+        }
+        .hoairesetcontacts{
+            display: flex;
+            flex-wrap:wrap;
+            width: 100%;
+        }
+        .horaire{
+            width: 100%;
+        }
+        .time{
+            width: 100%;
+        }
+        .elementform input{
+            width: 100%;
+        }
+        
+        /*!============  *Footer*  =========*/    
+        footer {
+            height: auto;
+        }
+        .part1 {
+            height: auto;
+            grid-template-columns: repeat(2, 300px);
+        }
     
     }
     

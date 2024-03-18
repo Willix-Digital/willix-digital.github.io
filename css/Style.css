@@ -148,11 +148,11 @@ nav{
     background-color: #f1dec9;
 }
 .login-btn.scrolled {
-    color: #694d45; 
-    border: 2px solid #694d45;
+    color: #C38154; 
+    border: 2px solid #C38154; 
 }
 .links a.scrolled,#logo a.scrolled {
-    color: #694d45; 
+    color:#C38154; 
 }
 
 .navbar :is(.hamburger-btn, .close-btn) {
@@ -160,7 +160,7 @@ nav{
 }
 
 .color{
-    color: #694d45; 
+    color: #C38154; 
 }
 /*!
 =================================================================================================================================
@@ -652,7 +652,8 @@ nav{
     color: white;
     font-family: "Quicksand";
     padding-bottom: 5px;
-    font-size: 2rem;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .msg-txt p {
@@ -665,7 +666,7 @@ nav{
 }
 
 .msg-txt p span a {
-    color: #f1dec9;
+    color: #C38154;
     font-weight: bold;
     padding-right: 5px;
     font-size: 1.1rem;
@@ -777,9 +778,9 @@ nav{
 }
 
 .ZoneDetente-Text h1{
-    font-family: 'Quicksand';
-    font-size: 2rem;
-    color:#884A39;   
+    font-size: 50px;
+    color:#C38154; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .ZoneDetente-Img{
     display: flex;
@@ -794,7 +795,7 @@ nav{
 .ZoneDetente-Img img{
     max-height:100% ;
     max-width: 280px;
-    box-shadow: 10px 10px 5px 0px #ce902dda;       
+    box-shadow: 10px 10px 5px 0px #C38154;    
     object-fit: cover;
     object-position: center;
 }
@@ -867,8 +868,8 @@ nav{
 
 .gal-txt h1 {
     font-size: 50px;
-    color: #884A39;  
-    font-family: 'Quicksand';
+    color:#C38154; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .ma-galerie {
@@ -878,18 +879,19 @@ nav{
     margin: 30px auto;
     /* border: 1px solid #333; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(3, 475px);
     justify-content: center;
     grid-gap: 10px;
     overflow: hidden;
 }
 
 .ma-galerie img{
-    width: 350px;
+    width: 475px;
     height: 250px;
     background: #333;
     transition: all 0.4s ease-out;
     overflow: hidden;
+    object-fit: cover;
 }
 .gal-box {
     overflow: hidden;
@@ -955,7 +957,7 @@ transform: scale(1.1);
 */
 .rdv{
     height: 500px;
-    width:1500px;
+    width:1700px;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -1042,7 +1044,7 @@ transform: scale(1.1);
 }
 .elementforms input{
     height: 50px;
-    width: 90%;
+    width: 100%;
     margin-bottom: 25px;
 }
 .elementforms ::placeholder{
@@ -1075,7 +1077,7 @@ footer {
     height: 320PX;
     width: 100vw;
     max-width: 100%;
-    background: #996b36;    
+    background: #C38154;
     display: flex;
     justify-content: space-around;
     justify-items: center;
@@ -1206,8 +1208,8 @@ footer {
 }
 
 .Nouscontacter i:hover{
-    color:#664725fb; }
-
+    color: white;
+}
 
 
 .Horraires {
@@ -1273,8 +1275,7 @@ footer {
     font-size: 20px;
     padding-right: 10px;
     cursor: pointer;
-    color: #F1DEC9;
-    transition: all 0.2s ease-in-out;
+    color: white;
 }
 
 .social i:hover{
