@@ -506,8 +506,6 @@
     }
     .msg-txt .button {
         display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 2px 25px;
         cursor: pointer;
         background-color: transparent;
@@ -815,7 +813,6 @@
         .msg-txt .button {
             display: flex;
             justify-content: center;
-            align-items: center;
             padding: 2px 25px;
             cursor: pointer;
             background-color: transparent;
@@ -914,12 +911,75 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
     @media   (orientation:portrait ) {
 
     }
     
     @media only screen and (max-width: 1240px) {
-        
+
+        /*!============  *NOS PRESTATIONS*  =========*/
+        .nosprestations{
+            height: auto;
+        }
+        .title-prestations h1{
+        }
+        .title-prestations{
+            text-align: left;
+            justify-content: flex-start;
+            padding-left: 40px;
+
+        }
+        .title-prestations p{
+            font-size: 18px;
+            color: white;
+            padding: 0 0;
+        }
+        .btnallprestations {
+            padding: 10px 40px;
+        }
+        .card-content {
+            align-items:center;
+            justify-content:flex-start;
+            width:100%;
+            overflow:auto;
+            padding-top: 100px;
+            padding-left:60px;
+            padding-right: 60px;
+            scroll-behavior:smooth;
+            flex-direction: column;
+          }
+          .card {
+            width: 400px;
+            min-width: 400px;
+            height:200px;
+            background:#fff;
+            position:relative;
+            z-index:10;
+            margin:25px;
+            min-height:356px;
+            cursor:pointer;
+            transition: all .25s ease;
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0, .08);
+          }
+
         /*!============  *Rdv*  =========*/
         .rdv{
             height: 600px;
@@ -947,12 +1007,13 @@
             grid-template-columns: repeat(1, 100%);
         }
         .ma-galerie img{
-            width: 100%;
+            width: 90%;
             height: 250px;
             background: #333;
             transition: all 0.4s ease-out;
             overflow: hidden;
             object-fit: cover;
+            margin: auto;
         }
         /*!============  *Rdv*  =========*/
         .rdv{

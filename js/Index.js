@@ -72,117 +72,27 @@ signupLoginLink.forEach((link) => {
 
 /*!
 =================================================================================================================================
-     *DEFILEMENT AUTOMATIQUE DE MON CAROUSSELLE
-=================================================================================================================================
-*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  var radioButtons = document.querySelectorAll(".control");
-
-  function autoChangeSlide() {
-    // Trouvez l'index du bouton radio actuellement coché
-    var currentIndex = Array.from(radioButtons).findIndex(
-      (radio) => radio.checked
-    );
-    // Calculez l'index du prochain bouton radio
-    var nextIndex = (currentIndex + 1) % radioButtons.length;
-    // Cochez le prochain bouton radio pour changer de slide
-    radioButtons[nextIndex].checked = true;
-  }
-  // Changez de slide automatiquement toutes les 40 secondes
-  setInterval(autoChangeSlide, 20000);
-});
-
-/*!
-=================================================================================================================================
-     *
-=================================================================================================================================
-*/
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [
-    "<i class='fa fa-caret-left'></i>",
-    "<i class='fa fa-caret-right'></i>",
-  ],
-  autoplay: true,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
-});
-/*!
-=================================================================================================================================
-     *BOUTON TOP
-=================================================================================================================================
-*/
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [
-    "<i class='fa fa-caret-left'></i>",
-    "<i class='fa fa-caret-right'></i>",
-  ],
-  autoplay: true,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
-});
-
-/*!
-=================================================================================================================================
      *DEFILEMENT AUTOMATIQUE DU SLIDER 
 =================================================================================================================================
 */
+const next = document.querySelector("#next");
+const prev = document.querySelector("#prev");
 
-$(document).ready(function () {
-  var currentSlide = 1;
-  var totalSlides = $(".slider > div").length; // Nombre total de slides
-  var slideInterval = 5000; // Intervalle en millisecondes entre chaque changement de slide
+function handleScrollNext(direction) {
+  const cards = document.querySelector(".card-content");
+  cards.scrollLeft = cards.scrollLeft +=
+    window.innerWidth / 2 > 600
+      ? window.innerWidth / 2
+      : window.innerWidth - 100;
+}
 
-  function nextSlide() {
-    if (currentSlide < totalSlides) {
-      currentSlide++;
-    } else {
-      currentSlide = 1;
-    }
+function handleScrollPrev(direction) {
+  const cards = document.querySelector(".card-content");
+  cards.scrollLeft = cards.scrollLeft -=
+    window.innerWidth / 2 > 600
+      ? window.innerWidth / 2
+      : window.innerWidth - 100;
+}
 
-    // Calcule la nouvelle position du slider en pourcentage
-    var newPosition = (currentSlide - 1) * -100;
-
-    // Applique la transformation au slider
-    $(".slider").css("transform", "translateX(" + newPosition + "%)");
-  }
-
-  // Démarre le défilement automatique
-  var autoSlide = setInterval(nextSlide, slideInterval);
-
-  // Arrête le défilement automatique lorsque la souris survole le slider
-  $(".slider").hover(
-    function () {
-      clearInterval(autoSlide);
-    },
-    function () {
-      autoSlide = setInterval(nextSlide, slideInterval);
-    }
-  );
-});
+next.addEventListener("click", handleScrollNext);
+prev.addEventListener("click", handleScrollPrev);
