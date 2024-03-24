@@ -839,9 +839,9 @@ nav{
 =================================================================================================================================
 */
 .a-propos {
-    width: 1600px;
+    width: 1500px;
     max-width: 100%;
-    height:340px;
+    height:380px;
     display: flex;
     justify-content:left;
     align-items: center;
@@ -861,17 +861,18 @@ nav{
     padding: 10px;
     position: relative;
     margin: auto;
+    max-height: 99%;
+
 
 }
 
 .msg-txt {
     max-width: 60%;
-    height: 300px;
     padding: 5px 40px;
-    background-color: rgba(10, 10, 10, 0.479);
+    background-color: rgba(10, 10, 10, 0.63);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-
+    max-height: 99%;
 }
 
 .msg-txt h1 {
@@ -882,11 +883,12 @@ nav{
 }
 
 .msg-txt p {
+    position: relative;
     font-size: 18px;
     color: white;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    padding-bottom: 1.3rem;
+    padding-bottom: 1.2rem;
+    z-index: 1;
 
 }
 
@@ -1030,45 +1032,7 @@ nav{
     max-width: 200px;
 }
 
-/*
-=================================================================================================================================
-      *Services
-=================================================================================================================================
-*/
-.carousel-wrap {
-    margin: 90px auto;
-    padding: 0 5%;
-    width: 80%;
-    position: relative;
-    display: none;
-  }
-  
-  /* fix blank or flashing items on carousel */
-  .owl-carousel .item {
-    position: relative;
-    z-index: 100; 
-    -webkit-backface-visibility: hidden; 
-  }
-  
-  /* end fix */
-  .owl-nav > div {
-    margin-top: -26px;
-    position: absolute;
-    top: 50%;
-    color: #cdcbcd;
-  }
-  
-  .owl-nav i {
-    font-size: 52px;
-  }
-  
-  .owl-nav .owl-prev {
-    left: -30px;
-  }
-  
-  .owl-nav .owl-next {
-    right: -30px;
-  }
+
 
 /*
 =================================================================================================================================
@@ -1076,7 +1040,7 @@ nav{
 =================================================================================================================================
 */
 #galérie {
-    max-width: 1600px;
+    max-width: 1380px;
     width: 100%;
     height: auto;
     margin: auto;
@@ -1125,56 +1089,101 @@ nav{
 .ma-galerie img:hover{
 transform: scale(1.1);
 }
-
-
-/*!
+/*
 =================================================================================================================================
-      *LOCALISATION
+      *News Letter
 =================================================================================================================================
 */
-.localisation{
-    height: 650px;
-    max-width: 1400px;
+.newsletter{
+    height: 350px;
+    width: 100vw;
     max-width: 100%;
-    padding: 10px;
-    margin: 10px auto;
-    overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    display: none;
-}
-.localisation h1{
-    font-size: 50px;
-    color: #884A39;  
-    font-family: 'Quicksand';
-    margin: 20px 0 10px 0;
+    background-color: #C38154;
 }
 
-#map{
-    background-color: #f1dec9;
-    margin: auto;
+.elementsnews{
+    width: 1500px;
     height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+}
+.elementsnews h1{
+    font-size: 38px;
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    color: white;
+}
+.elementsnews p{
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    font-size: 15px;
     width: 90%;
-    overflow: hidden;
-    position: relative;
+    text-align: justify;
+}
+.formnewletter{
+    width:50% ;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#map img{
-    object-fit: cover;
-    background-repeat: no-repeat;
-    object-position: center;
-    transition: all 0.3s ease-in;
-    width: 100%;
-    height: 100%;
+.formnewletter h3{
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 3px;
+    font-size: 18px;
+    text-align:left;
+}
+.monform{
+    width: 47%;
+}
+.formnewletter input{
+    height: 30px;
+    width: 90%;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    border-bottom: 1px solid white;
+    background-color:transparent;
+}
+.formnewletter ::placeholder{
+    opacity: 80%;
+    color: white;
+    border: 1px solid transparent;
 }
 
-#map img:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease-in;
+.formnewletter ::-ms-check{
+    opacity: 80%;
+    border: 1px solid transparent;
 }
 
+.btnnewsletter{
+    height: 50px;
+    background-color:white;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 5px;
+    transition: all 0.2s;
+}
+
+
+
+.btnnewsletter:hover {
+    box-shadow: 0 0 10px 5px white; 
+    border: 1px solid transparent;
+}
 
 /*!
 =================================================================================================================================
@@ -1182,7 +1191,7 @@ transform: scale(1.1);
 =================================================================================================================================
 */
 .rdv{
-    height: 500px;
+    height: 600px;
     width:1600px;
     max-width: 100%;
     display: flex;
@@ -1302,7 +1311,7 @@ transform: scale(1.1);
 
 footer {
     height: 320PX;
-    width: 100vw;
+    max-width: 1700px;
     max-width: 100%;
     background: #C38154;
     display: flex;
@@ -1318,10 +1327,9 @@ footer {
 
 .part1 {
     height: 210px;
-    width: 1700px;
-    max-width: 100%;
+    width: 1500px;
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(4, 350px);
     justify-content: center;
     justify-items: center;
     grid-gap: 10px;
@@ -1330,7 +1338,7 @@ footer {
 
 .Lehahiahangel {
     max-height:210px;
-    max-width: 300px;
+    max-width: 350px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -1383,7 +1391,7 @@ footer {
 }
 .Nospages a:hover {
     width: 100%;
-    border-bottom: 1px solid #F1DEC9;
+    color: #f8f8f8;
 }
 
 
