@@ -79,63 +79,8 @@
 
 
 }  @media only screen and (max-width: 2240px) {
-    .CSSgal {
-        height: 100vh;
-        max-height: 100vh;
-        width: 100vw;
-        min-width: 100%;
-    }
-    .slider-txt{
-        display: flex;
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center;
-        height: 100vw;
-        width: 100vw;
-        position: relative; 
-        top: 50%; 
-        left: 0;
-        transform: translateY(-50%); 
-    }
-    .ma-galerie {
-        max-width: 1500px;
-        width: 80%;
-        height: auto;
-        margin: 30px auto;
-        /* border: 1px solid #333; */
-        display: grid;
-        grid-template-columns: repeat(3, 350px);
-        justify-content: center;
-        grid-gap: 10px;
-    }
-     /*============  *SLIDER*  =========*/
-     .CSSgal {
-        height: 100vh;
-        max-height: 100vh;
-    }
-    .slider-txt{
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-    }
-    #slidtitle {
-        font-size: 120px;
-    }
-    #slidgraphe{
-        font-size: 30px;
-    }
-    .slider-txt{
-        display: flex;
-        flex-direction: column; 
-        justify-content: center; 
-        align-items: center;
-        height: 100vw;
-        width: 100vw;
-        position: relative; 
-        top: 50%; 
-        left: 0;
-        transform: translateY(-50%); 
-    }
+    /*============  *SLIDER*  =========*/
+    
 
 
 }
@@ -233,10 +178,12 @@
         .navbar :is(.hamburger-btn, .close-btn) {
             display: block;
             font-size: 40px;
+            color: #C38154;
         }
         .navbar {
-            padding: 15px 0;
-            justify-content: space-around;
+            padding: 15px 10px;
+            margin: 0;
+            justify-content: space-evenly;
             padding: auto ;
             gap: 60%;
             height: 55px;
@@ -244,8 +191,20 @@
         .navbar .logo img {
             display: none;
         }
-        .navbar .logo h2 {
-            font-size: 1.4rem;
+        #logo {
+            width: 50%;
+            margin-left: -70px;
+        }
+        #logo a {
+            font-size: 1.3rem;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+        
+        #logo span {
+            font-family: "Catalish Huntera";
+            color: #ce8f2d;
         }
         .navbar .links {
             position: fixed;
@@ -257,7 +216,7 @@
             width: 100%;
             padding-top: 60px;
             text-align: center;
-            background: #996b36;    
+            background: #ce8f2d;   
             transition: 0.2s ease;
         }
         .navbar .links.show-menu {
@@ -282,22 +241,7 @@
             padding: 7px 10px;
             display: none; 
         }
-        /*============  *NAV*  =========*/
-        .CSSgal {
-            position: relative;
-            overflow: hidden;
-            height: 50vh;
-            max-height: 50vh;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .CSSgal .slider {
-            height: 100%;
-            white-space: nowrap;
-            font-size: 0;
-            transition: 0.8s;
-        }
-        
+  
         /*============  *FORMULAIRE*  =========*/
         .form-popup {
             width: 95%;
@@ -330,8 +274,8 @@
         
         /*============  *SLIDER*  =========*/
         .CSSgal {
-            height: 60vh;
-            max-height: 60vh;
+            height: 50vh;
+            max-height: 50vh;
         }
         #slidtitle {
             font-size: 40px;
@@ -387,9 +331,13 @@
         flex-wrap: wrap;
         gap: 5px;
         margin: auto;
+        max-width: 100%;
+        width: 100%;
     }
     .msg-txt {
         max-width: 100%;
+        width: 100%;
+        padding: 5px 15px;
         margin: auto;
         background-color: transparent;
     }

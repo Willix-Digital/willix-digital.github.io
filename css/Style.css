@@ -142,7 +142,7 @@ nav{
 }
 
 .navbar .login-btn:hover {
-    color: #C38154; 
+    color:white; 
     box-shadow: 0 0 10px 5px #C38154; 
     border: 2px solid transparent;
 }
@@ -327,12 +327,14 @@ nav{
 	position: relative;
 	overflow: hidden;
     height: 100vh;
-    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 .CSSgal .slider {
 	height: 100%;
+    width: 100%;
 	white-space: nowrap;
 	font-size: 0;
 	transition: 0.8s;
@@ -428,8 +430,8 @@ nav{
 .CSSgal{
 	color: #fff;	
 	text-align: center;
-    position: ab;
-    width: 100vw;
+    position: relative;
+    width: 100%;
     max-width: 100%;
 }
 .CSSgal .slider h2 {
@@ -446,7 +448,7 @@ nav{
 }
 
 #slid1{
-    background-image:  url(../images/SaunaPetite.jpg);
+    background-image:  url(../images/1big.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -468,7 +470,10 @@ nav{
     opacity: 40%;
 }
 #slid2{
-    background:#f1dec9 url(../images/z2.jpg)  center/cover no-repeat;
+    background:#f1dec9 url(../images/bg04.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 95% bottom 15%;
     position: relative; 
     justify-content: center;
     align-items: center;
@@ -505,7 +510,7 @@ nav{
     opacity: 40%;
 }
 #slid4{
-    background:#f1dec9 url(../images/bg04.jpg) center/cover no-repeat;
+    background:#f1dec9 url(../images/bg01.jpg) center/cover no-repeat;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -571,10 +576,10 @@ nav{
     width: 100%;
     font-size: 1.3vw;
     color: white;
-    transition: all 0.6s;
+    transition: all 0.3s ease-in-out;
 }
 .social-header :hover{
-    color: rgba(255, 255, 255, 0.5);
+    color:#C38154;
 }
 /*
 =================================================================================================================================
