@@ -1048,11 +1048,12 @@ nav{
 =================================================================================================================================
 */
 #galérie {
-    max-width: 1380px;
-    width: 100%;
+    width: 1600px;
+    max-width: 100%;
     height: auto;
     margin: auto;
     margin-top: 320px;
+    margin-bottom: 320px;
 }
 
 .gal-txt {
@@ -1071,21 +1072,21 @@ nav{
 }
 
 .ma-galerie {
-    max-width: 1600px;
-    width: 100%;
-    height: auto;
-    margin: 30px auto;
-    /* border: 1px solid #333; */
+    width: 1600px;
+    margin: auto;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(3, 540px);
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 500px);
     justify-content: center;
     grid-gap: 10px;
-    overflow: hidden;
+    margin: auto;
 }
 
 .ma-galerie img{
-    width: 540px;
-    height: 250px;
+    height:350px;
+    width: 500PX;
     background: #333;
     transition: all 0.4s ease-out;
     overflow: hidden;
