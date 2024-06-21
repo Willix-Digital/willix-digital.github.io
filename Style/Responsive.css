@@ -1,0 +1,462 @@
+@media   (orientation:portrait ) {
+    /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    .services{
+        margin-bottom: 40px;
+      }
+
+}
+
+
+@media screen and (max-width:1440px) {
+    /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    #zone-spétial{
+        width: 90vw;
+    }
+    .spétial-txt{
+        width: 50%;
+    }
+    .spétial-txt h1{
+        font-size: 3.2vw;
+    }
+    .spétial-txt p{
+        font-size: 1.2vw;
+    }
+    .spétial-img img{
+        width: 80%;
+        height:100%;
+    }
+    /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    #zone-services{
+        width: 90vw;
+    }
+    .services-txt{
+        width: 50%;
+    }
+    .services-txt h1{
+        font-size: 3.2vw;
+    }
+    .services-txt p{
+        font-size: 1.2vw;
+    }
+    .services-img img{
+        width: 80%;
+        height:100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1240px) {
+    /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    .txt-zone h1{
+        font-size: 2.3rem;
+     }
+    .txt-zone p a{
+        font-size: 1.6rem;
+     }
+    .spétial-img2 img , .spétial-img img{
+        width: 40vw;
+        margin: auto;
+    }
+    #secondp{
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    .services-itms{
+        width: 90vw;
+      }
+    .services-itms{
+        grid-template-columns: repeat(3 ,1fr);  
+      }
+    .services-itms{
+        margin-top: 0;
+    }
+}     
+
+@media screen and (max-width:1100px) {
+    /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    header{
+        height:100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        height:100vh;
+        max-width: 100%;  
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 100vw;
+        max-width: 100%;  
+    }
+    .ma-nav{
+        width: 100vw;
+    }
+    .navlinks {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #d4adfc;
+        transition: 0.3s ease;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        width: 50vw;
+        max-width: 100%;
+        height: 100vh;
+        max-height: 100vh;
+        min-height: 100vh;
+        gap: 40px;
+        right: -2000px;
+        margin: 0;
+        padding: 0;
+        z-index: 9;
+    }
+    .navlinks a{
+        font-size: 25px;
+        color: black;
+    }
+    .navbar h1 a{
+        padding-left: 95px;
+    }
+    nav .hamburger-btn {
+        color: white;  
+        cursor: pointer;
+        font-size: 40px;
+        display: block;
+        top: 40px;
+        padding-right: 95px;
+    }
+    .logoimg {
+        left: 50px;
+      }
+    .show-menu {
+        right: 0;
+    }
+    .navlinks  li a{
+        font-size: 24px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease-in-out;
+        text-align: left;
+      }
+      .navlinks  li a:hover{
+        font-size: 24px;
+      }
+      nav .close-btn {
+        right: 95px;
+        left: 0px;
+        top: 15px;
+        display: block;
+        position: absolute;
+        text-align: right;
+      }
+      .navbar h1 a{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    .a-propos{
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+    }
+    .a-propos::after {
+        z-index: -1;
+
+      }
+    #zone-spétial{
+        width: 90%;
+        max-width: 90%;
+        min-width: 90%;
+        min-width: none;
+        flex-wrap: wrap;
+        padding: 20px;
+        overflow: hidden;
+        margin: 50px 0;
+        z-index: 0;
+    }
+    .spétial-img2 img , .spétial-img img{
+        width: 80vw;
+        height:250px;
+        margin: auto;
+        object-position: top;
+    }
+    .spétial-txt{
+        width: 90vw;
+    }
+    .spétial-txt h1{
+        font-size: 40px;
+    }
+    .spétial-txt p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    .spétial-img{
+        width: 90%;
+    }
+    .spétial-img img{
+        width: 100%;
+        min-height: 300px;
+    }
+
+     /*!
+    =================================================================================================================================
+        *Nos services
+    =================================================================================================================================
+    */
+    .services{
+        width: 100vw;
+        max-width: 100%;
+        height: auto;
+    }
+    .services::after {
+        z-index: -1;
+
+      }
+    #zone-services{
+        width: 90%;
+        max-width: 90%;
+        min-width: 90%;
+        min-width: none;
+        flex-wrap: wrap;
+        padding: 20px;
+        overflow: hidden;
+        margin: 50px 0;
+        z-index: 0;
+    }
+    .services-img img{
+        width: 80vw;
+        height:250px;
+        margin: auto;
+        object-position: top;
+    }
+    .services-txt{
+        width: 90%;
+    }
+    .services-txt h1{
+        font-size: 40px;
+    }
+    .services-txt p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    .services-img{
+        width: 90%;
+    }
+    .services-img img{
+        width: 100%;
+        min-height: 570px;
+        object-fit: cover;
+    }
+    .services-img2{
+        width: 100%;
+    }
+    .trait{
+        color: #d4adfc;
+    }
+    .services-itms{
+        width: 80vw;
+      }
+    .services-itms{
+        grid-template-columns: repeat(1 ,1fr);  
+      }
+}
+@media screen and (max-width:990px) {
+    /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    .head-text{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        max-width: 80%;
+        text-align: center;
+    }
+    .txt-zone{
+        width: 100%;
+        margin: auto;
+        order: 2;
+        text-align: center;
+    }
+    .txt-zone h1{
+        font-size: 40px;
+        margin: auto;
+     }
+     #secondp{
+        text-align: center;
+        margin: auto;
+        font-size: 25px;
+    }
+    #firstp{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        flex-wrap: wrap;
+     }
+     #socialslinks{
+        margin: auto;
+      }
+    .txt-zone p a{
+        font-size: 20px;
+        text-align: justify;
+     }
+     #socialslinks i{
+        font-size: 20px;
+      }
+      .services{
+        margin-bottom: 40px;
+        width: 90vw;
+      }
+}
+@media screen and (max-width:770px) {
+     /*!
+    =================================================================================================================================
+        *HEAD
+    =================================================================================================================================
+    */
+    .navbar h1 a{
+        padding-left: 45px;
+    }
+    nav .hamburger-btn {
+        padding-right: 45px;
+    }
+    nav .close-btn {
+        right: 45px;
+        top: 11px;
+      }
+    .txt-zone h1{
+        font-size:4.2vw;
+    }
+    #secondp{
+        font-size: 18px;
+    }
+    p#firstp{
+        font-size: 12px;
+        width: 90vw;
+    }
+    /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    #zone-spétial{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+        margin: 50px auto;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .spétial-txt{
+        width: 100%;
+    }
+    .spétial-img{
+        width: 100%;
+    }
+   .spétial-img img{
+        width: 100%;
+        height:250px;
+        margin: auto;
+        object-position: top;
+    }
+    .spétial-txt h1{
+        font-size: 4.5vw;
+    }
+         /*!
+    =================================================================================================================================
+        *A PROPOS
+    =================================================================================================================================
+    */
+    #zone-services{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+        margin: 50px auto;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .services-txt{
+        width: 100%;
+    }
+    .services-img{
+        width: 100%;
+    }
+   .services-img img{
+        width: 100%;
+        height:250px;
+        margin: auto;
+        object-position: top;
+    }
+    .services-txt h1{
+        font-size: 4.5vw;
+    }
+    .logoimg {
+        left: 10px;
+      }
+}
+
+@media screen and (max-width:560px) {
+    /*!
+   =================================================================================================================================
+       *HEAD
+   =================================================================================================================================
+   */
+   .navbar h1 a{
+    padding-left: 35px;
+    }
+    nav .hamburger-btn {
+        padding-right: 35px;
+    }
+    nav .close-btn {
+        right: 35px;
+    }
+  .txt-zone{
+    width: 90vw;
+    min-width: 90vw;
+    margin: auto;
+    order: 2;
+    text-align: center;
+    }
+    .txt-zone h1{
+        font-size:30px;
+    }
+    #secondp{
+        font-size: 18px;
+        width: 80%;
+    }
+
+}
