@@ -30,7 +30,7 @@ body::before {
 .animate {
   opacity: 0;
   transform: translateY(70px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
 }
 .animate.show {
   opacity: 1;
@@ -259,6 +259,16 @@ i:active {
   transform: translateY(10px);
   transition: 100ms;
 }
+.imglogohead{
+  width: 40%;
+}
+.logohead{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter:drop-shadow( 2px 7px 3px #d4adfc)
+}
 /*!
 =================================================================================================================================
      *A PROPOS
@@ -347,7 +357,7 @@ i:active {
   margin:  auto;
   font-family: "Open Sans", sans-serif;
   z-index: 0;
-  margin-bottom: 40px;
+  margin: 50px auto;
 }
 #zone-services{
   width: 85vw;
@@ -423,7 +433,6 @@ color: #d4adfc;
 }
 .service1:hover ,.service2:hover ,.service3:hover{
   background-color: #d4adfc;
-  top: -10px;
   transition: all 0.4s ease-in-out;
 }
 .services-itms i{
