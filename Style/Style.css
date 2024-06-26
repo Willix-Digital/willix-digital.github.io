@@ -15,18 +15,6 @@ body {
     background-color: #05051d;
     position: relative;
 }
-body::before {
-  content: "";
-  position: absolute;
-  background-color: #000002;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 20%;
-  z-index: -1;
-  border-radius: 35px;
-}
 .animate {
   opacity: 0;
   transform: translateY(70px);
@@ -46,7 +34,21 @@ html {
   margin-bottom: 20px;
   margin-top: -35px;
 }
-
+.darkcolor{
+  color: #05051d;
+  transition: all 0.3s;
+}
+.clearcolor{
+  color: #d4adfc;
+  transition: all 0.3s;
+}
+.whitecolor{
+  color: white;
+  transition: all 0.3s;
+}
+.whitebg{
+  background-color: white;
+}
 /*!
 =================================================================================================================================
      *HEAD
@@ -63,7 +65,6 @@ header {
     flex-wrap: wrap;
     z-index: 0;
     font-family: "Open Sans", sans-serif;
-    background-color: #05051d;
 }
 
 nav {
@@ -98,7 +99,6 @@ nav {
     text-align: center;
 }
 .navlinks a{
-    color: #d4adfc;
     font-weight: 600;
     font-size: 20px;
     transition: all 0.3s;
@@ -108,7 +108,6 @@ nav {
 }
 .navlinks a:hover{
     color: white;
-    border-bottom: 1px solid white;
 }
 .navbar h1 a{
     color: white;
@@ -116,7 +115,6 @@ nav {
     font-family: 'National Park';
 }
 .navbar h1 span{
-    color: #d4adfc;
 } 
 .logotxt {
   transition: opacity 0.2s ease, visibility 0.2s ease;
@@ -200,7 +198,6 @@ nav .hamburger-btn {
     font-family: "Open Sans", sans-serif;
 }
 .head-text span{
-  color: #d4adfc;
 }
 .txt-zone{
     display: flex;
@@ -213,12 +210,10 @@ nav .hamburger-btn {
     margin: auto 20px;
 }
 .txt-zone h1{
-   color: white;
    font-size:50px;
    width: 80%;
 }
 .txt-zone a{
-  color: #d4adfc;
   font-size: 1.5rem;
   width: 100%;
   padding-right: 10px;
@@ -229,7 +224,6 @@ nav .hamburger-btn {
   width: 100%;
 }
 #secondp{
-  color: white;
   font-size: 1.2rem;
   width: 80%;
   margin: 0;

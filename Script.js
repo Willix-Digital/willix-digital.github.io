@@ -107,3 +107,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+/*!
+=================================================================================================================================
+     *Darck Mode
+=================================================================================================================================
+*/
+var btnMode = document.getElementById("mode");
+var bodyElement = document.querySelector('body');
+var elementsWithWhiteColor = document.querySelectorAll('.whitecolor');
+var elementsWithClearColor = document.querySelectorAll('.clearcolor');
+var elementsWithDarckColor = document.querySelectorAll('.darkcolor');
+
+
+btnMode.addEventListener("click", () => {
+  if (btnMode.classList.contains("clearcolor")) {
+    btnMode.classList.remove("clearcolor");
+    btnMode.classList.add("darkcolor");
+    bodyElement.classList.add("whitebg");
+  }
+  else{
+    btnMode.classList.add("clearcolor");
+    btnMode.classList.remove("darkcolor");
+    bodyElement.classList.remove("whitebg")
+    elementsWithClearColor.classList.remove("darkcolor")
+  }
+
+  elementsWithWhiteColor.forEach((element) => {
+    if (element.classList.contains('whitecolor')) {
+        element.classList.remove('whitecolor');
+        element.classList.add('darkcolor');
+    } else if (element.classList.contains('darkcolor')) {
+        element.classList.remove('darkcolor');
+        element.classList.add('whitecolor');
+    }
+});
+});
