@@ -4,10 +4,62 @@
         *HEAD
     =================================================================================================================================
     */
-    .services{
-        margin-bottom: 40px;
+    header{
+        height: 50vh;
+        max-height: 50vh;
+    }
+    .animate {
+        opacity: 0;
+        transform: translateY(0px);
+        transition: opacity 0.4s ease-out, transform 0.4s ease-out;
       }
-
+      .animate.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    .head-text{
+        width: 95vw;
+    }
+    .services{
+        margin: 80px auto;
+      }
+    .spétial-txt{
+        width: 90vw;
+    }
+    #zone-spétial{
+        width: 85vw;
+    }
+    .spétial-txt{
+        width: 90vw;
+        max-width: 90vw;
+        margin: 40px auto;
+    }
+    .spétial-img{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+    .services-txt{
+        width: 90vw;
+        max-width:90vw;
+        min-width: 90vw;
+    }
+    .services-img{
+        width: 90vw;
+        height: 300px;
+        max-width:90vw;
+        min-width: 90vw;
+    }
+    .services-itms{
+        width: 90vw;
+        max-width:90vw;
+        min-width: 90vw;
+        margin: 40px auto;
+    }
+    nav .close-btn {
+        right: 95px;
+        left: 0px;
+      }
 }
 
 
@@ -166,6 +218,11 @@
         transition: all 0.2s ease-in-out;
         text-align: left;
       }
+     /* .navlinks::before{
+        background-color: black;
+        height: 100vh;
+        width: 100vw;
+      }*/
       .navlinks  li a:hover{
         font-size: 24px;
       }
@@ -298,6 +355,15 @@
         *HEAD
     =================================================================================================================================
     */
+    header {
+        height: 100vh;
+        max-height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+    }
+    .imglogohead{
+        width: 60%;
+      }
     .head-text{
         flex-wrap: wrap;
         text-align: center;
@@ -305,6 +371,12 @@
         height: auto;
         max-width: 80%;
         text-align: center;
+    }
+    .spétial-txt{
+        width: 95vw;
+    }
+    .spétial-img{
+        width: 95vw;
     }
     .txt-zone{
         width: 100%;
@@ -337,10 +409,17 @@
      #socialslinks i{
         font-size: 20px;
       }
-      .services{
+    .services{
         margin-bottom: 40px;
         width: 90vw;
-      }
+        max-width: 90vw;
+    }
+    .spétial-img{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+
 }
 @media screen and (max-width:770px) {
      /*!
