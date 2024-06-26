@@ -26,15 +26,18 @@ window.addEventListener("scroll", function () {
     var logoLink = document.querySelector(".navbar h1 span");
     var logoImg = document.querySelector(".logoimg");
     var logoTxt = document.querySelector(".logotxt");
+    var hamburgerBtn = document.querySelector(".hamburger-btn");
 
     var scrolled = window.scrollY > 8; // 3mm de défilement
   
     if (scrolled) {
       logoImg.classList.add("visible");
       logoTxt.classList.add("invisible");
+      hamburgerBtn.classList.add("color");
     } else {
         logoImg.classList.remove("visible");
         logoTxt.classList.remove("invisible");
+        hamburgerBtn.classList.remove("color");
     }
 
     if (scrolled) {
