@@ -15,9 +15,9 @@ hamburgerBtn.addEventListener("click", () => {
 hideMenuBtn.addEventListener("click", () => hamburgerBtn.click());
 
 /*!
-=================================================================================================================================
-     *Gestion du changement de style de la barre de navigation lors du défilement
-=================================================================================================================================
+=======================================================================
+ *Gestion du changement de style de la barre de navigation lors du défilement
+=======================================================================
 */
 
 window.addEventListener("scroll", function () {
@@ -58,10 +58,10 @@ window.addEventListener("scroll", function () {
       navbar.classList.remove("color");
     }
   });
-/* 
-================================================================================================================================
- ****************Annimation de la page
-================================================================================================================================
+/*!
+=======================================================================
+      Annimation de la page
+=======================================================================
 */
 document.addEventListener('DOMContentLoaded', () => {
     // Liste des éléments à animer avec leurs sélecteurs et décalages de déclenchement
@@ -108,9 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /*!
-=================================================================================================================================
+=======================================================================
      *Darck Mode
-=================================================================================================================================
+=======================================================================
 */
 var btnMode = document.getElementById("mode");
 var bodyElement = document.querySelector('body');
@@ -144,10 +144,12 @@ btnMode.addEventListener("click", () => {
 });
 
 
+
+
 /*!
-=================================================================================================================================
+=======================================================================
      *Show Hide texte
-=================================================================================================================================
+=======================================================================
 */
 function toggleText() {
   var moreText = document.querySelector('.more-text');
@@ -160,3 +162,60 @@ function toggleText() {
     showMore.textContent = "Lire la suite";
   }
 }
+
+
+/*!
+=======================================================================
+     *stats
+=======================================================================
+*/
+document.addEventListener('DOMContentLoaded', function() {
+  const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5 // 50% de visibilité
+  };
+
+  // Sélectionner tous les éléments avec les classes spécifiques
+  const targets = document.querySelectorAll('.stat1 h1, .stat2 h1, .stat3 h1, .stat4 h1');
+
+  const endValues = {
+      'stat1': 10,
+      'stat2': 6,
+      'stat3': 20,
+      'stat4': 40,
+  };
+
+  function countUp(target, end, duration) {
+      let start = 0;
+      let startTime = null;
+      const step = (timestamp) => {
+          if (!startTime) startTime = timestamp;
+          const progress = timestamp - startTime;
+          const easing = Math.pow(progress / duration, 3); // Accélération cubique
+          const value = Math.floor(start + easing * (end - start));
+          target.innerText = value;
+          if (progress < duration) {
+              window.requestAnimationFrame(step);
+          } else {
+              target.innerText = end;
+          }
+      };
+      window.requestAnimationFrame(step);
+  }
+
+  function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const target = entry.target;
+              const parentClass = target.parentElement.classList[0];
+              const endValue = endValues[parentClass];
+              countUp(target, endValue, 2000); // Compter jusqu'à la valeur finale en 2 secondes
+              observer.unobserve(target); // Arrêter d'observer après le déclenchement
+          }
+      });
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, observerOptions);
+  targets.forEach(target => observer.observe(target));
+});
