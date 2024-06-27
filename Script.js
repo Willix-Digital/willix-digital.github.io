@@ -142,3 +142,21 @@ btnMode.addEventListener("click", () => {
     }
 });
 });
+
+
+/*!
+=================================================================================================================================
+     *Show Hide texte
+=================================================================================================================================
+*/
+function toggleText() {
+  var moreText = document.querySelector('.more-text');
+  var showMore = document.querySelector('.show-more');
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    showMore.textContent = "Lire moins";
+  } else {
+    moreText.style.display = "none";
+    showMore.textContent = "Lire la suite";
+  }
+}
