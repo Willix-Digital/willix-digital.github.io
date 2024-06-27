@@ -489,7 +489,6 @@ color: #d4adfc;
 #zone-spétial2{
   width: 85vw;
   max-width: 1700px;
-  min-width: 1000px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -512,37 +511,44 @@ color: #d4adfc;
   gap: 30px;
   margin: auto;
 }
+
 .services-txt{
   width: 50%;
   text-align: left;
   color: #29294a;
 }
+
 .services-txt span{
 color: #d4adfc;
 }
+
 .services-txt h1{
   font-size: 50px;
   padding-bottom: 20px;
 }
+
 .services-txt p{
   font-size: 22px;
   margin-bottom: 20PX;
 }
+
 .services-img{
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
 .services-img2{
   width: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
 .services-img img{
-  width: 600px;
-  height:400px;
+  width: 70%;
+  height:100%;
   object-fit: cover;
   object-position: center;
 }

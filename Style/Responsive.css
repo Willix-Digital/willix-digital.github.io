@@ -138,15 +138,19 @@
 
     .services-itms{
         width: 90vw;
+        grid-template-columns: repeat(3 ,1fr);
+        margin-top: 0;  
     }
 
-    .services-itms{
-        grid-template-columns: repeat(3 ,1fr);  
-    }
-
-    .services-itms{
-        margin-top: 0;
-    }
+    /*!
+    =======================================================================
+        *Services
+    =======================================================================
+    */
+    .service1 ,.service2 ,.service3{
+        height: auto;
+        margin: 40px auto;
+      }
 }     
 
 
@@ -349,11 +353,11 @@
     }
 
     .services-img img{
-        width: 90vw;
+        width: 100%;
         min-height: none;
         max-height: none;
-        height:250px;
         margin: auto;
+        margin-top: 40px;
         object-position: top;
     }
 
@@ -373,12 +377,6 @@
         width: 100%;
     }
     
-    .services-img img{
-        width: 100%;
-        min-height: 570px;
-        object-fit: cover;
-    }
-
     .services-img2{
         width: 100%;
     }
@@ -389,11 +387,9 @@
     .services-itms{
         width: 80vw;
         margin-top: 0;
-      }
-    .services-itms{
+        height: 200px;
         grid-template-columns: repeat(1 ,1fr);  
       }
-
 }
 
 
@@ -540,7 +536,7 @@
     }
    .services-img img{
         width: 100%;
-        height:150px;
+        height:100%;
         margin: auto;
         object-position: top;
     }
@@ -569,9 +565,6 @@
     .services-img{
         height: 200px;
     }
-    .services-img img{
-        height: 200px;
-    }
 }
 
 @media screen and (max-width:560px) {
@@ -579,7 +572,8 @@
     =======================================================================
         *HEAD
     =======================================================================
-    */   .navbar h1 a{
+    */   
+    .navbar h1 a{
     padding-left: 35px;
     }
 
