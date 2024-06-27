@@ -271,10 +271,11 @@ nav .hamburger-btn {
   display: flex;
   justify-content: space-around;
   gap: 20px;
+  margin: auto;
 }
 
 #socialslinks i{
-  color: black;
+  color: #05051d;
   font-size: 25px;
   transition: all 0.3s;
 }
