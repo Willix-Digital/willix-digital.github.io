@@ -1,7 +1,7 @@
 /*!
-=================================================================================================================================
+=======================================================================
      *GENERAL
-=================================================================================================================================
+=======================================================================
 */
 * {
     margin: 0;
@@ -10,23 +10,18 @@
     list-style: none;
     /*border: 1px solid #d4adfc;*/
 }
-body {
-    opacity: 1;
-    background-color: #05051d;
-    position: relative;
-}
-.animate {
-  opacity: 0;
-  transform: translateY(70px);
-  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-}
-.animate.show {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 html {
   scroll-behavior: smooth;
 }
+
+body {
+    opacity: 1;
+    background-color: white;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
 .trait{
   color: #d4adfc;
   width: 100%;
@@ -34,37 +29,39 @@ html {
   margin-bottom: 20px;
   margin-top: -35px;
 }
+
 .darkcolor{
   color: #05051d;
   transition: all 0.3s;
 }
+
 .clearcolor{
   color: #d4adfc;
   transition: all 0.3s;
 }
+
 .whitecolor{
   color: white;
   transition: all 0.3s;
 }
+
 .whitebg{
   background-color: white;
 }
 /*!
-=================================================================================================================================
+=======================================================================
      *HEAD
-=================================================================================================================================
+=======================================================================
 */
 header {
     height: 100vh;
     width: 100vw;
     max-width: 100%;
     padding: 0;
-    margin: auto;
-    font-family: 'National Park';
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     z-index: 0;
-    font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -82,6 +79,7 @@ nav {
     margin: 0 auto;
     z-index: 999999;
 }
+
 .ma-nav{
   max-width: 1700px;
   width: 85vw;
@@ -92,12 +90,14 @@ nav {
   margin: 10px auto;
   position: relative;
 }
+
 .navlinks{
     display: flex;
     justify-content: space-around;
     gap: 10px;
     text-align: center;
 }
+
 .navlinks a{
     font-weight: 600;
     font-size: 20px;
@@ -105,20 +105,27 @@ nav {
     border-bottom: 1px solid transparent;
     padding-bottom: 10px;
     padding: 0 10px;
+    color: #05051d;
 }
+
 .navlinks a:hover{
     color: white;
 }
+
 .navbar h1 a{
-    color: white;
+    color: black;
     font-size: 30px;
     font-family: 'National Park';
 }
-.navbar h1 span{
-} 
+
 .logotxt {
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
+
+#logo span{
+  color: #d4adfc;
+}
+
 .logoimg {
   transition: opacity 0.2s ease, visibility 0.2s ease;
   opacity: 0;
@@ -126,10 +133,12 @@ nav {
   position: absolute;
   left: -50px;
 }
+
 .logotxt.invisible {
   opacity: 0;
   visibility: hidden;
 }
+
 .logoimg.visible {
   opacity: 1;
   visibility: visible;
@@ -144,21 +153,26 @@ nav .close-btn {
   cursor: pointer;
   font-size: 40px;
 }
+
 nav .hamburger-btn {
-  color: white;  
+  color: #d4adfc;  
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 40px;
   display: none;
 }
+
 .navbar.scrolled {
   background-color: #d4adfc;
 }
+
 .navlinks a.scrolled,.navbar h1 span.scrolled {
-  color:#000002; 
+  color: black;
 }
+
 .navlinks a:hover.scrolled,#logo a.scrolled{
   border-bottom: 1px solid #000002;
 }
+
 .btn {
   padding: 10px 20px;
   border-radius: 2px;
@@ -173,9 +187,10 @@ nav .hamburger-btn {
   transition: all 0.5s ease;
   font-family: 'National Park';
 }
+
 .btn:hover {
   background-color: #d4adfc;
-  color: #03020e;
+  color: black;
   box-shadow: #d4adfc
 }
 
@@ -197,8 +212,8 @@ nav .hamburger-btn {
     z-index: 0;
     font-family: "Open Sans", sans-serif;
 }
-.head-text span{
-}
+
+
 .txt-zone{
     display: flex;
     justify-content: flex-start;
@@ -208,244 +223,81 @@ nav .hamburger-btn {
     gap: 20px;
     width: 70%;
     margin: auto 20px;
+    color: black;
 }
+
+#tp span{
+  color: #d4adfc;
+}
+
 .txt-zone h1{
    font-size:50px;
    width: 80%;
 }
+
 .txt-zone a{
   font-size: 1.5rem;
   width: 100%;
   padding-right: 10px;
+  font-weight: bold;
 }
+
+#secondp{
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0;
+  color: black;
+}
+
 #firstp{
   color: #d4adfc;
   font-size: 1.4rem;
   width: 100%;
 }
-#secondp{
-  font-size: 1.2rem;
-  width: 80%;
-  margin: 0;
-}
+
+
 #secondp a{ 
   font-size: 1.2rem;
+  color: #d4adfc;
+
 }
+
 #secondp span{
   font-family: 'National Park';
+  color: #d4adfc;
 }
+
 #socialslinks{
   display: flex;
   justify-content: space-around;
   gap: 20px;
 }
+
 #socialslinks i{
-  color: white;
+  color: black;
   font-size: 25px;
   transition: all 0.3s;
 }
+
 #socialslinks i:hover{
-  color: #d4adfc;
+  color: black;
 }
+
 i:active {
   letter-spacing: 1.5px;
   color: hsl(0, 0%, 100%);
   transform: translateY(10px);
   transition: 100ms;
 }
+
 .imglogohead{
   width: 40%;
 }
+
 .logohead{
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
   filter:drop-shadow( 2px 7px 3px #d4adfc)
-}
-/*!
-=================================================================================================================================
-     *A PROPOS
-=================================================================================================================================
-*/
-.a-propos{
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    min-height: 500px;
-    max-height: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;
-    margin:  auto;
-    font-family: "Open Sans", sans-serif;
-    position: relative;
-}
-#zone-spétial{
-    width: 85vw;
-    max-width: 1700px;
-    min-width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin: auto;
-    gap: 30px;
-    z-index: 5;
-}
-.spétial-txt{
-    width: 50%;
-    text-align: left;
-    color: white;
-}
-.spétial-txt span{
-  color: #d4adfc;
-}
-.spétial-txt h1{
-    font-size: 50px;
-    padding-bottom: 20px;
-}
-.spétial-txt p{
-    font-size: 18px;
-    margin-bottom: 20PX;
-}
-.spétial-img{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.pétial-img2{
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.spétial-img2 img , .spétial-img img{
-    width: 600px;
-    height:400px;
-    object-fit: cover;
-    object-position: center;
-    box-shadow: 8px 9px 9px 2px rgba(212,173,252,1);
-    -webkit-box-shadow: 8px 9px 9px 2px rgba(212,173,252,1);
-    -moz-box-shadow: 8px 9px 9px 2px rgba(212,173,252,1);
-}
-/*!
-=================================================================================================================================
-     *A PROPOS
-=================================================================================================================================
-*/
-.services{
-  width: 100vw;
-  max-width: 1700px;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin:  auto;
-  font-family: "Open Sans", sans-serif;
-  z-index: 0;
-  margin: 50px auto;
-}
-#zone-services{
-  width: 85vw;
-  max-width: 1700px;
-  min-width: 1000px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  margin: auto;
-  gap: 30px;
-  margin: auto;
-}
-.services-txt{
-  width: 50%;
-  text-align: left;
-  color: white;
-}
-.services-txt span{
-color: #d4adfc;
-}
-.services-txt h1{
-  font-size: 50px;
-  padding-bottom: 20px;
-}
-.services-txt p{
-  font-size: 18px;
-  margin-bottom: 20PX;
-}
-.services-img{
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.services-img2{
-  width: 50%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.services-img img{
-  width: 600px;
-  height:400px;
-  object-fit: cover;
-  object-position: center;
-}
-
-.services-itms{
-  width: 85vw;
-  max-width: 1700px;
-  height: 250px;
-  display: grid;   
-  grid-template-columns: repeat(3 ,1fr);  
-  justify-content: center;
-  align-items: center;
-  grid-gap: 20px;
-  color: white;
-  z-index: -1;
-  margin-top: -200px;
-}
-.services-itms a {
-  color: white;
-}
-.service1 ,.service2 ,.service3{
-  padding:15px ;
-  border: 1px solid #d4adfc;
-  height: 90%;
-  width: 95%;
-  transition: all 0.4s ease-in-out;
-  position: relative;
-}
-.service1:hover ,.service2:hover ,.service3:hover{
-  background-color: #d4adfc;
-  transition: all 0.4s ease-in-out;
-}
-.services-itms i{
-  font-size: 80px;
-  color: #d4adfc;
-  margin-bottom: 20px;
-  transition: all 0.3s;
-}
-.services-itms h1{
-  font-size: 25px;
-  margin-bottom: 18px;
-}
-.services-itms h3{
-  font-size: 12px;
-}
-.services-itms p{
-  font-size: 15px;
-}
-
-.service1:hover i,.service2:hover i,.service3:hover i{
-  color: white;
 }
