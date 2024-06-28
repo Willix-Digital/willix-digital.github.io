@@ -595,7 +595,7 @@ color: #d4adfc;
   color: white;
 }
 
-.services-txt p{
+.services-txt p ,.spétial-txt p {
   color: #29294a;
 }
 
