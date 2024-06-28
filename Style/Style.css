@@ -21,7 +21,9 @@ body {
   position: relative;
   font-family: "Figtree", sans-serif;
 }
-
+img{
+  border-radius: 15px;
+}
 .trait{
   color: #d4adfc;
   width: 100%;
@@ -531,7 +533,11 @@ color: #d4adfc;
   font-size: 22px;
   margin-bottom: 20PX;
 }
-
+.services-txt p span{ 
+  font-size: 22px;
+  margin-bottom: 20PX;
+  color: inherit;
+}
 .services-img{
   width: 50%;
   display: flex;
@@ -586,8 +592,13 @@ color: #d4adfc;
   color: #29294a;
 }
 .service1:hover  h1,h3,p ,.service2:hover h1,h3,p  ,.service3:hover h1,h3,p {
+  color: white;
+}
+
+.services-txt p{
   color: #29294a;
 }
+
 .services-itms i{
   font-size: 80px;
   color: #d4adfc;

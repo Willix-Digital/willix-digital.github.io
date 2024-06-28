@@ -170,52 +170,39 @@ function toggleText() {
 =======================================================================
 */
 document.addEventListener('DOMContentLoaded', function() {
+  const stats = document.querySelectorAll('.acc h1');
   const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5 // 50% de visibilité
+      threshold: 0.1
   };
 
-  // Sélectionner tous les éléments avec les classes spécifiques
-  const targets = document.querySelectorAll('.stat1 h1, .stat2 h1, .stat3 h1, .stat4 h1');
-
-  const endValues = {
-      'stat1': 10,
-      'stat2': 6,
-      'stat3': 20,
-      'stat4': 40,
-  };
-
-  function countUp(target, end, duration) {
-      let start = 0;
-      let startTime = null;
-      const step = (timestamp) => {
-          if (!startTime) startTime = timestamp;
-          const progress = timestamp - startTime;
-          const easing = Math.pow(progress / duration, 3); // Accélération cubique
-          const value = Math.floor(start + easing * (end - start));
-          target.innerText = value;
-          if (progress < duration) {
-              window.requestAnimationFrame(step);
-          } else {
-              target.innerText = end;
-          }
-      };
-      window.requestAnimationFrame(step);
-  }
-
-  function handleIntersection(entries, observer) {
+  const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
           if (entry.isIntersecting) {
-              const target = entry.target;
-              const parentClass = target.parentElement.classList[0];
-              const endValue = endValues[parentClass];
-              countUp(target, endValue, 2000); // Compter jusqu'à la valeur finale en 2 secondes
-              observer.unobserve(target); // Arrêter d'observer après le déclenchement
+              const element = entry.target;
+              const finalValue = parseInt(element.getAttribute('data-value'), 10);
+              let currentValue = 0;
+              const increment = Math.ceil(finalValue / 100); // Change increment to control speed
+
+              const updateValue = () => {
+                  if (currentValue < finalValue) {
+                      currentValue += increment;
+                      element.innerText = `${Math.min(currentValue, finalValue)}%`;
+                      requestAnimationFrame(updateValue);
+                  } else {
+                      element.innerText = `${finalValue}%`;
+                  }
+              };
+
+              // Reset to 0% before starting the animation
+              element.innerText = '0%';
+              updateValue();
           }
       });
-  }
+  }, observerOptions);
 
-  const observer = new IntersectionObserver(handleIntersection, observerOptions);
-  targets.forEach(target => observer.observe(target));
+  stats.forEach(stat => {
+      observer.observe(stat);
+  });
 });
