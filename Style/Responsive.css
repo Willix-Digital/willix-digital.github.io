@@ -313,7 +313,6 @@
     }
     .show-more {
         display: inline;
-        color: blue;
         cursor: pointer;
         text-decoration: underline;
       }
@@ -352,15 +351,6 @@
         z-index: 0;
     }
 
-    .services-img img{
-        width: 100%;
-        min-height: none;
-        max-height: none;
-        margin: auto;
-        margin-top: 40px;
-        object-position: top;
-    }
-
     .services-txt{
         width: 100%;
     }
@@ -370,35 +360,48 @@
     }
 
     .services-txt p{
-        font-size: 20px;
-    }
-
-    .services-img{
-        width: 100%;
-    }
-    
-    .services-img2{
-        width: 100%;
+        font-size: 18px;
     }
 
     .trait{
         color: #d4adfc;
     }
     .services-itms{
-        width: 80vw;
-        margin-top: 0;
-        height: 200px;
-        grid-template-columns: repeat(1 ,1fr);  
+        height: 250px;
+        grid-template-columns: repeat(3 ,1fr);  
+        grid-gap: 20px;
       }
+    .service1 ,.service2 ,.service3{
+        width: 85%;
+        height: 260px;
+        margin: auto;
+    }
+    .services-itms i{
+        font-size: 40px;
+    }
+    .services-img{
+       display: none;
+    }
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:990px) {
-    /*!
-    =================================================================================================================================
+        /*!
+    =======================================================================
         *HEAD
-    =================================================================================================================================
+    =======================================================================
     */
     header {
         height: 100vh;
@@ -424,6 +427,7 @@
     }
     .spétial-txt{
         width: 95vw;
+        margin-bottom: 20px;
     }
     .spétial-img{
         width: 95vw;
@@ -459,15 +463,26 @@
      #socialslinks i{
         font-size: 20px;
       }
+    /*!
+    =======================================================================
+            *Services
+    =======================================================================
+    */
     .services{
         margin-bottom: 40px;
         width: 90vw;
         max-width: 90vw;
+        height: auto;
+        min-height: none;
+        max-height: none;
     }
-    .spétial-img{
-        width: 90vw;
-        max-width: 90vw;
-        min-width: 90vw;
+    .services-itms{
+        height: 280px;
+    }
+    .service1 ,.service2 ,.service3{
+        width: 90%;
+        height: 280px;
+        margin: auto;
     }
     .logohead{
         height: 100%;
@@ -481,12 +496,27 @@
         *Accompagnement
     =======================================================================
     */
-    .acc p{
+    .stat1, .stat2 ,.stat3 ,.stat4{
         width: 90%;
-        font-size: 35px;
+        font-size: 15px;
       }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:790px) {
     /*!
     =======================================================================
@@ -530,6 +560,9 @@
     }
     .services-txt{
         width: 100%;
+        height: auto;
+        min-height: none;
+        max-height: none;
     }
     .services-img{
         width: 100%;
@@ -557,13 +590,23 @@
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 40px;
       }
+
     /*!
     =======================================================================
-        *Accompagnement
+        *Services
     =======================================================================
     */
     .services-img{
         height: 200px;
+    }
+    .services-itms{
+        height: 280px;
+        grid-template-columns: repeat(2 ,1fr);  
+    }
+    .service1 ,.service2 ,.service3{
+        width: 90%;
+        height: 280px;
+        margin: auto;
     }
 }
 
@@ -640,9 +683,22 @@
         font-size:30px;
         width: 100%;
     }
-
+    /*!
+    =======================================================================
+        *Services
+    =======================================================================
+    */
     
-
+    .services-itms{
+        height: 200px;
+        grid-template-columns: repeat(1 ,1fr);  
+        margin-bottom: 20px;
+    }
+    .service1 ,.service2 ,.service3{
+        width: 95%;
+        height: 200px;
+        margin: auto;
+    }
 
 
     }
