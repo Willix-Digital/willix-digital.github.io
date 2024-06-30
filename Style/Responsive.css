@@ -107,6 +107,66 @@
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
       }
+    /*!
+    =======================================================================
+        *Footer
+    =======================================================================
+    */
+    footer{
+        padding: 20px auto;
+        height: auto;
+      }
+
+      .footpart1{
+        height: auto;
+        margin: 10px auto;
+        grid-template-rows:1fr 2fr 1fr; 
+      }
+
+      .page-section{
+        grid-area: 1/3/2/3;
+        border: none;
+      }
+
+      .linkpage{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+
+      .linkpage a{
+        color: white;
+        width: 100%;
+      }
+
+      .Apropos-section{
+        grid-area: 1/1/2/3;
+      }
+
+      .Apropos-section a{
+        padding-top: 10px;
+      }
+
+      .Horraire-section{
+        grid-area: 1/4/2/4;
+      }
+
+      .Contact-section{
+        grid-area: 1/5/2/5;
+      }
+
+      .Legal-section{
+        grid-area: 3/1/4/6;
+      }
+
+      .map-section{
+        grid-area: 2/1/3/6;
+        height: 400px;
+      }
+
 }
 
 
@@ -162,6 +222,46 @@
         font-size: 20px;
         margin-bottom: 20PX;
     }
+    /*!
+    =======================================================================
+        *Footer
+    =======================================================================
+    */
+    .footpart1{
+        grid-template-columns: repeat(4 ,1fr);
+        grid-template-rows: repeat(4 ,1fr);
+      }
+      .page-section{
+        grid-area: 2/2/4/2;
+        display: block;
+      }
+      .linkpage{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      .linkpage a{
+        color: white;
+        width: 100%;
+      }
+      .Apropos-section{
+        grid-area: 1/1/2/3;
+      }
+      .Horraire-section{
+        grid-area: 1/3/2/6;
+      }
+      .Contact-section{
+        grid-area: 2/1/4/2;
+      }
+      .Legal-section{
+        grid-area: 4/1/4/6;
+      }
+      .map-section{
+        grid-area: 1/3/4/6;
+      }
 }     
 
 
@@ -397,6 +497,77 @@
     }
     .services-img{
        display: none;
+    }
+    /*!
+    =======================================================================
+        *Footer
+    =======================================================================
+    */
+    .footpart1{
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(4 ,1fr);
+        height: auto;
+        max-width: 90vw;
+        margin: 0 auto;
+      }
+      .Apropos-section{
+        grid-area: 1/1/1/2;
+        margin-top: 20px;
+      }
+      .page-section{
+        grid-area: 2/1/2/3;
+    }
+
+      .legallink{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 50%;
+    }
+
+    .linkpage a{
+        color: white;
+        width: 100%;
+    }
+
+    .Horraire-section{
+        grid-area: 3/1/3/3;
+    }
+
+    .Contact-section{
+        grid-area: 4/1/4/3;
+        height: 50px;
+    }
+
+    .Legal-section{
+        grid-area: 6/1/6/3;
+        text-align: center;
+        height: 100px;
+    }
+    
+    .legallink{
+        display: inline-flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: auto;
+        width: 50%;
+    }
+
+    .Legal-section h3{
+        width: 50%;
+    }
+
+    .map-section{
+        grid-area: 5/1/5/3;
+    }
+
+    .linkpage a:hover{
+        border-bottom:1px transparent;
     }
 }
 
