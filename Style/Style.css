@@ -561,6 +561,14 @@ color: #d4adfc;
   object-position: center;
 }
 
+.all{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
 .services-itms{
   width: 85vw;
   max-width: 1700px;
