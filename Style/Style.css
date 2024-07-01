@@ -561,13 +561,6 @@ color: #d4adfc;
   object-position: center;
 }
 
-.all{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
 
 .services-itms{
   width: 85vw;
@@ -761,6 +754,8 @@ color: white;
 
 .Legal-section h3{
   width: 50%;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
 .legallink{
@@ -771,6 +766,10 @@ color: white;
   margin: auto;
   width: 50%;
 }
+.legallink a {
+  font-size: 18px;
+}
+
 .map-section{
   text-align: center;
   grid-area: 1/4/3/6;
