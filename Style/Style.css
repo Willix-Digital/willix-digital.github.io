@@ -696,12 +696,11 @@ color: white;
 .linkpage a{
   color: white;
   margin-right: 20px;
-  border-bottom:1px solid transparent;
   padding-bottom:5px;
-  transition: 0.1s ease;
+  transition: all 0.2s ease-in-out;
 }
 .linkpage a:hover{
-  border-bottom:1px solid white;
+  color: #d4adfc;
 }
 .Apropos-section{
   position: relative;
@@ -737,7 +736,13 @@ color: white;
 
 .listesprestations a{
   width: 100%;
+  transition: all 0.2s ease-in-out;
 }
+
+.listesprestations a:hover{
+  color: #d4adfc;
+}
+
 
 .Contact-section{
   position: relative;
@@ -782,6 +787,11 @@ color: white;
 .legallink a {
   font-size: 18px;
   text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.legallink a:hover {
+  color: #d4adfc;
 }
 
 .map-section{
