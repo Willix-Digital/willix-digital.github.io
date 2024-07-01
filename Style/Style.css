@@ -694,7 +694,6 @@ color: white;
 .linkpage a{
   color: white;
   margin-right: 20px;
-  font-weight:bold;
   border-bottom:1px solid transparent;
   padding-bottom:5px;
   transition: 0.1s ease;
@@ -726,6 +725,18 @@ color: white;
   color: white;
   grid-area: 3/2/2/2;
 }
+
+.listesprestations{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.listesprestations a{
+  width: 100%;
+}
+
 .Contact-section{
   position: relative;
   grid-area: 3/3/2/4;

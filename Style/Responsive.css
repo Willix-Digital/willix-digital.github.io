@@ -569,8 +569,12 @@
         grid-area: 5/1/5/3;
     }
 
+    .linkpage a{
+        border-bottom:0px ;
+    }
+
     .linkpage a:hover{
-        border-bottom:1px transparent;
+        border-bottom:0px ;
     }
 }
 
