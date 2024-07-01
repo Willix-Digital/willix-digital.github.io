@@ -753,7 +753,7 @@ color: white;
 }
 
 .Legal-section h3{
-  width: 50%;
+  width: 30%;
   font-size: 18px;
   font-weight: lighter;
 }
@@ -764,10 +764,11 @@ color: white;
   justify-content: flex-end;
   align-items: center;
   margin: auto;
-  width: 50%;
+  width: 70%;
 }
 .legallink a {
   font-size: 18px;
+  text-align: center;
 }
 
 .map-section{
