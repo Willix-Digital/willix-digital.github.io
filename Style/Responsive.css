@@ -423,12 +423,12 @@
         min-height: 300px;
         min-width: 200px;
     }
-    .show-more {
+    .show-more , .show-more2 {
         display: inline;
         cursor: pointer;
         text-decoration: underline;
       }
-    .more-text {
+    .more-text ,.more-text2 {
         display: none;
       }
     /*!
@@ -488,8 +488,8 @@
         grid-gap: 20px;
       }
     .service1 ,.service2 ,.service3{
-        width: 85%;
-        height: 260px;
+        width: 90%;
+        height: 300px;
         margin: auto;
     }
     .services-itms i{
@@ -511,7 +511,7 @@
         margin: 0 auto;
       }
       .Apropos-section{
-        grid-area: 1/1//2;
+        grid-area: 1/1/0/2;
         margin-top: 20px;
       }
       .page-section{
@@ -533,7 +533,6 @@
 
     .linkpage a{
         color: white;
-        width: 100%;
     }
 
     .Horraire-section{
@@ -574,6 +573,14 @@
 
     .linkpage a{
         border-bottom:0px ;
+    }
+
+    .social-icones{
+        margin: 20px 0;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
     }
 
     .linkpage a:hover{

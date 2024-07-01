@@ -19,7 +19,7 @@ body {
   opacity: 1;
   background-color: white;
   position: relative;
-  font-family: "Figtree", sans-serif;
+  font-family: 'Montserrat';
   position: relative;
 }
 img{
@@ -343,10 +343,10 @@ color: #d4adfc;
   color: inherit;
   transition: all 0.3s ease-in-out;
 }
-.more-text {
+.more-text , .more-text2{
   transition: all 0.3s ease-in-out;
 }
-.show-more {
+.show-more , .show-more2 {
   display: none;
   transition: all 0.3s ease-in-out;
 }
@@ -646,6 +646,8 @@ footer{
   color: white;
   bottom: 0;
   margin: 0 auto;
+  font-family: 'Montserrat';
+
 }
 
 footer h1 {
@@ -788,7 +790,7 @@ color: white;
 }
 
 .social-icones{
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   color: white;

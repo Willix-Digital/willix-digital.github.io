@@ -163,6 +163,17 @@ function toggleText() {
   }
 }
 
+function toggleText2() {
+  var moreText = document.querySelector('.more-text2');
+  var showMore = document.querySelector('.show-more2');
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    showMore.textContent = "Lire moins";
+  } else {
+    moreText.style.display = "none";
+    showMore.textContent = "Lire la suite";
+  }
+}
 
 /*!
 =======================================================================
