@@ -11,6 +11,14 @@
     /*border: 1px solid #d4adfc;*/
 }
 
+.tiret{
+    width :30%;
+    display: bloc;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    border-bottom : 3px solid #d4adfc;
+ }
+
 html {
   scroll-behavior: smooth;
 }
