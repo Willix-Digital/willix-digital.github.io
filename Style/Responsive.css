@@ -222,6 +222,10 @@
         font-size: 20px;
         margin-bottom: 20PX;
     }
+    #zone-spétial2 , #zone-spétial  {
+        flex-wrap: wrap;
+    }
+}
     /*!
     =======================================================================
         *Footer
